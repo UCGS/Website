@@ -7,140 +7,6 @@
     <meta name="description" content="Unique Creations - Handcrafted Laser-Cut Wooden Gifts in Langebaan, South Africa">
     <meta name="keywords" content="laser-cut, wooden gifts, custom woodwork, Langebaan, South Africa">
     <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- Add CSS for Responsive Menu -->
-    <style>
-        /* Basic Styling */
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        #header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #f8f8f8;
-        }
-
-        #logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        #logo img {
-            max-height: 60px;
-        }
-
-        /* Main Navigation Menu */
-        #nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        #nav ul li {
-            margin: 0 15px;
-        }
-
-        #nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        /* Hamburger Menu */
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .hamburger .bar {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            border-radius: 5px;
-        }
-
-        /* Mobile Menu */
-        @media (max-width: 768px) {
-            #nav ul {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background-color: #f8f8f8;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                box-shadow: 0 4px 2px -2px gray;
-            }
-
-            #nav ul.active {
-                display: flex;
-            }
-
-            #nav ul li {
-                padding: 10px;
-                text-align: center;
-                border-bottom: 1px solid #ddd;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-        }
-
-        /* Product Showcase Styles */
-        #product-showcase {
-            padding: 50px 0;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
-
-        #product-showcase h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .product-item {
-            display: inline-block;
-            width: 30%;
-            margin: 10px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .product-item img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-
-        .product-item h3 {
-            margin-top: 15px;
-            font-size: 1.2em;
-        }
-
-        .product-item p {
-            font-size: 1em;
-            color: #555;
-            margin-top: 10px;
-        }
-
-        /* Ensure the products stack in smaller screens */
-        @media (max-width: 768px) {
-            .product-item {
-                width: 80%;
-                margin: 20px auto;
-            }
-        }
-    </style>
 </head>
 <body class="is-preload homepage">
     <div id="page-wrapper">
@@ -148,35 +14,30 @@
         <!-- Header -->
         <div id="header-wrapper">
             <header id="header" class="container">
+
                 <!-- Logo -->
                 <div id="logo" style="display: flex; align-items: center; gap: 10px;">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Unique Creations Logo" style="max-height: 60px; width: auto;">
-                    </a>
+    <a href="index.html">
+        <img src="images/logo.png" alt="Unique Creations Logo" style="max-height: 60px; width: auto;">
+    </a>
+    
                     <span>Unique Creations</span>
                 </div>
 
-                <!-- Navigation Menu -->
+                <!-- Nav -->
                 <nav id="nav">
                     <ul>
                         <li class="current"><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="custom-orders.html">Custom Orders</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="custom.html">Custom Orders</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
-
-                    <!-- Hamburger Icon for Mobile -->
-                    <div class="hamburger" id="hamburger-icon">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
                 </nav>
+
             </header>
         </div>
 
-        <!-- Main Banner or Content -->
+        <!-- Banner -->
         <div id="banner-wrapper">
             <div id="banner" class="box container">
                 <div class="row">
@@ -194,23 +55,44 @@
             </div>
         </div>
 
-        <!-- Product Showcase Section -->
-        <div id="product-showcase">
-            <h2>Our Featured Products</h2>
-            <div class="product-item">
-                <img src="images/product1.jpg" alt="Custom Wooden Signs" />
-                <h3>Custom Wooden Signs</h3>
-                <p>Personalized wooden signs perfect for home decor or special occasions.</p>
-            </div>
-            <div class="product-item">
-                <img src="images/product2.jpg" alt="Wooden Keychains" />
-                <h3>Wooden Keychains</h3>
-                <p>Beautifully crafted keychains customized to your liking.</p>
-            </div>
-            <div class="product-item">
-                <img src="images/product3.jpg" alt="Bespoke Gift Boxes" />
-                <h3>Bespoke Gift Boxes</h3>
-                <p>Elegant wooden boxes for gifts and keepsakes.</p>
+        <!-- Features -->
+        <div id="features-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-12-medium">
+                        <section class="box feature">
+                            <a href="#" class="image featured"><img src="images/product1.jpg" alt="Custom Wooden Signs" /></a>
+                            <div class="inner">
+                                <header>
+                                    <h2>Custom Wooden Signs</h2>
+                                </header>
+                                <p>Personalized wooden signs perfect for home decor or special occasions.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section class="box feature">
+                            <a href="#" class="image featured"><img src="images/product2.jpg" alt="Wooden Keychains" /></a>
+                            <div class="inner">
+                                <header>
+                                    <h2>Wooden Keychains</h2>
+                                </header>
+                                <p>Beautifully crafted keychains customized to your liking.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section class="box feature">
+                            <a href="#" class="image featured"><img src="images/product3.jpg" alt="Bespoke Gift Boxes" /></a>
+                            <div class="inner">
+                                <header>
+                                    <h2>Bespoke Gift Boxes</h2>
+                                </header>
+                                <p>Elegant wooden boxes for gifts and keepsakes.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -248,11 +130,5 @@
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        // JavaScript for toggling the mobile menu visibility
-        document.getElementById("hamburger-icon").addEventListener("click", function() {
-            document.querySelector("nav ul").classList.toggle("active");
-        });
-    </script>
 </body>
 </html>
