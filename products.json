@@ -3,36 +3,42 @@
         "name": "Custom Keychains",
         "description": "Personalized laser-cut keychains in various designs.",
         "price": 15.00,
-        "image": "images/product1.jpg"
+        "image": "images/product1.jpg",
+        "onSale": true
     },
     {
         "name": "Decorative Wall Art",
         "description": "Elegant, custom wall pieces to suit any room.",
         "price": 40.00,
-        "image": "images/product2.jpg"
+        "image": "images/product2.jpg",
+        "onSale": false
     },
     {
         "name": "Engraved Gifts",
         "description": "Perfectly crafted gifts for any occasion.",
         "price": 25.00,
-        "image": "images/product3.jpg"
+        "image": "images/product3.jpg",
+        "onSale": true
     },
     {
         "name": "Wooden Coasters",
         "description": "Durable, stylish coasters for your home or office.",
         "price": 12.00,
-        "image": "images/product4.jpg"
+        "image": "images/product4.jpg",
+        "onSale": false
     },
     {
         "name": "Custom Plaques",
         "description": "Personalized plaques for gifts or decor.",
         "price": 35.00,
-        "image": "images/product5.jpg"
+        "image": "images/product5.jpg",
+        "onSale": true
     },
     {
         "name": "Laser-Cut Jewelry",
         "description": "Intricate designs that make a statement.",
         "price": 20.00,
-        "image": "images/product6.jpg"
+        "image": "images/product6.jpg",
+        "onSale": false
     }
 ]
