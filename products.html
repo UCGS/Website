@@ -61,6 +61,28 @@
             margin-bottom: 30px;
         }
 
+        .search-container {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .search-container input {
+            padding: 10px;
+            font-size: 1em;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .search-container select {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
         .products-list {
             display: flex;
             flex-wrap: wrap;
@@ -132,66 +154,52 @@
             <h1>Our Products</h1>
             <p>Explore our beautifully crafted, bespoke laser-cut wooden creations. Each piece is designed and made with precision to bring a unique touch to your space.</p>
 
-            <div class="products-list">
-                <div class="product">
-                    <img src="product1.jpg" alt="Product 1">
+            <!-- Search Bar and Sort Dropdown -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for products..." onkeyup="searchProducts()">
+                <select id="sort-by" onchange="sortProducts()">
+                    <option value="">Sort by Price</option>
+                    <option value="low-high">Low to High</option>
+                    <option value="high-low">High to Low</option>
+                </select>
+            </div>
+
+            <div class="products-list" id="products-list">
+                <div class="product" data-price="15">
+                    <img src="images/product1.jpg" alt="Product 1">
                     <h3>Custom Keychains</h3>
                     <p>Personalized laser-cut keychains in various designs.</p>
-                    <p class="price">$15.00</p>
+                    <p class="price">R15.00</p>
                 </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="Product 2">
+                <div class="product" data-price="40">
+                    <img src="images/product2.jpg" alt="Product 2">
                     <h3>Decorative Wall Art</h3>
                     <p>Elegant, custom wall pieces to suit any room.</p>
-                    <p class="price">$40.00</p>
+                    <p class="price">R40.00</p>
                 </div>
-                <div class="product">
-                    <img src="product3.jpg" alt="Product 3">
+                <div class="product" data-price="25">
+                    <img src="images/product3.jpg" alt="Product 3">
                     <h3>Engraved Gifts</h3>
                     <p>Perfectly crafted gifts for any occasion.</p>
-                    <p class="price">$25.00</p>
+                    <p class="price">R25.00</p>
                 </div>
-                <div class="product">
-                    <img src="product4.jpg" alt="Product 4">
+                <div class="product" data-price="12">
+                    <img src="images/product4.jpg" alt="Product 4">
                     <h3>Wooden Coasters</h3>
                     <p>Durable, stylish coasters for your home or office.</p>
-                    <p class="price">$12.00</p>
+                    <p class="price">R12.00</p>
                 </div>
-                <div class="product">
-                    <img src="product5.jpg" alt="Product 5">
+                <div class="product" data-price="35">
+                    <img src="images/product5.jpg" alt="Product 5">
                     <h3>Custom Plaques</h3>
                     <p>Personalized plaques for gifts or decor.</p>
-                    <p class="price">$35.00</p>
+                    <p class="price">R35.00</p>
                 </div>
-                <div class="product">
-                    <img src="product6.jpg" alt="Product 6">
+                <div class="product" data-price="20">
+                    <img src="images/product6.jpg" alt="Product 6">
                     <h3>Laser-Cut Jewelry</h3>
                     <p>Intricate designs that make a statement.</p>
-                    <p class="price">$20.00</p>
-                </div>
-		<div class="product">
-                    <img src="product7.jpg" alt="Product 6">
-                    <h3>Laser-Cut Jewelry</h3>
-                    <p>Intricate designs that make a statement.</p>
-                    <p class="price">$20.00</p>
-                </div>
-		<div class="product">
-                    <img src="product6.jpg" alt="Product 8">
-                    <h3>Laser-Cut Jewelry</h3>
-                    <p>Intricate designs that make a statement.</p>
-                    <p class="price">$20.00</p>
-                </div>
-		<div class="product">
-                    <img src="product6.jpg" alt="Product 6">
-                    <h3>Laser-Cut Jewelry</h3>
-                    <p>Intricate designs that make a statement.</p>
-                    <p class="price">$20.00</p>
-                </div>
-		<div class="product">
-                    <img src="product6.jpg" alt="Product 6">
-                    <h3>Laser-Cut Jewelry</h3>
-                    <p>Intricate designs that make a statement.</p>
-                    <p class="price">$20.00</p>
+                    <p class="price">R20.00</p>
                 </div>
             </div>
         </section>
@@ -199,5 +207,46 @@
     <footer>
         <p>&copy; 2025 Langebaan Laser-Cut Creations. All rights reserved.</p>
     </footer>
+
+    <script>
+        function searchProducts() {
+            const input = document.getElementById('search-input');
+            const filter = input.value.toLowerCase();
+            const productsList = document.getElementById('products-list');
+            const products = productsList.getElementsByClassName('product');
+
+            for (let i = 0; i < products.length; i++) {
+                const title = products[i].getElementsByTagName('h3')[0];
+                const description = products[i].getElementsByTagName('p')[0];
+
+                if (title.innerHTML.toLowerCase().indexOf(filter) > -1 || description.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                    products[i].style.display = "";
+                } else {
+                    products[i].style.display = "none";
+                }
+            }
+        }
+
+        function sortProducts() {
+            const sortOption = document.getElementById('sort-by').value;
+            const productsList = document.getElementById('products-list');
+            const products = Array.from(productsList.getElementsByClassName('product'));
+
+            products.sort((a, b) => {
+                const priceA = parseFloat(a.getAttribute('data-price'));
+                const priceB = parseFloat(b.getAttribute('data-price'));
+
+                if (sortOption === "low-high") {
+                    return priceA - priceB;
+                } else if (sortOption === "high-low") {
+                    return priceB - priceA;
+                }
+                return 0; // Default no sorting
+            });
+
+            // Reorder products in the DOM
+            products.forEach(product => productsList.appendChild(product));
+        }
+    </script>
 </body>
 </html>
