@@ -200,35 +200,42 @@
         console.log("Popular Products:", popularProducts);
 
         // Display On Sale Products
-        onSaleProducts.forEach(product => {
-            const productDiv = document.createElement('div');
-            productDiv.classList.add('product');
+onSaleProducts.forEach(product => {
+    const productDiv = document.createElement('div');
+    productDiv.classList.add('product');
 
-            productDiv.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
-                <div class="sale-label">On Sale</div>
-                <h3>${product.name}</h3>
-                <p>${product.description}</p>
-                <p class="price">R${product.price.toFixed(2)}</p>
-            `;
+    // Calculate Discounted Price (Example: 20% off)
+    const discount = 0.2;
+    const discountedPrice = product.price - (product.price * discount);
 
-            onSaleSection.appendChild(productDiv);
-        });
+    productDiv.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <div class="sale-label">On Sale</div>
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+        <p class="price">
+            <span class="original-price">R${product.price.toFixed(2)}</span>
+            <span class="sale-price">R${discountedPrice.toFixed(2)}</span>
+        </p>
+    `;
 
-        // Display Popular Products
-        popularProducts.forEach(product => {
-            const productDiv = document.createElement('div');
-            productDiv.classList.add('product');
+    onSaleSection.appendChild(productDiv);
+});
 
-            productDiv.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
-                <h3>${product.name}</h3>
-                <p>${product.description}</p>
-                <p class="price">R${product.price.toFixed(2)}</p>
-            `;
+// Display Popular Products
+popularProducts.forEach(product => {
+    const productDiv = document.createElement('div');
+    productDiv.classList.add('product');
 
-            popularSection.appendChild(productDiv);
-        });
+    productDiv.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+        <p class="price">R${product.price.toFixed(2)}</p>
+    `;
+
+    popularSection.appendChild(productDiv);
+});
     })
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
