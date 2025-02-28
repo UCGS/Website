@@ -5,9 +5,90 @@
     <title>About Us - Langebaan Laser-Cut Creations</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #f2f2f2, #e6e6e6);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px; /* Adjust the logo size */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: #0077b6;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #about {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #about h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        #about h2 {
+            font-size: 2em;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        #map-wrapper {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #fff;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <img src="images/logo.png" alt="Langebaan Laser-Cut Creations Logo"> <!-- Placeholder for the logo -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,16 +106,16 @@
             <p>Email us at: <a href="mailto:uniquecreationsweb@gmail.com">uniquecreationsweb@gmail.com</a></p>
             <p>Call or WhatsApp us at: <a href="tel:+123456789">+123 456 789</a></p>
         </section>
-	<!-- Google Map -->
-	<div id="map-wrapper" style="width: 79%; height: 400px; margin-top: 30px; margin-bottom: 30px; margin-left: 160px;">
-    		<iframe 
-        		src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBUNtmriMhdsIVD_hXhYTpVtDNxSOmCcrs&q=Langebaan,South+Africa,Unique+Creations"
-        		width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	</div>
+
+        <!-- Google Map -->
+        <div id="map-wrapper" style="width: 79%; height: 400px; margin-left: 160px;">
+            <iframe 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBUNtmriMhdsIVD_hXhYTpVtDNxSOmCcrs&q=Langebaan,South+Africa,Unique+Creations"
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Langebaan Laser-Cut Creations. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
