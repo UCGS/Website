@@ -143,6 +143,11 @@
             color: #0077b6;
             text-decoration: line-through;
         }
+        .sale-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: red; /* Set sale price color to red */
+        }
 
         .sale-tag {
             background-color: red;
@@ -223,10 +228,14 @@
                     // Check if product is on sale
                     if (product.onSale) {
                         saleTag = '<div class="sale-tag">Sale</div>';
-                        priceHTML = `<p class="old-price">R${product.price.toFixed(2)}</p><p class="price">R${product.salePrice.toFixed(2)}</p>`;
+                        priceHTML = `
+                                    <p class="old-price">R${product.price.toFixed(2)}</p>
+                                    <p class="price sale-price">R${product.salePrice.toFixed(2)}</p>
+                                    `;
                     } else {
                         priceHTML = `<p class="price">R${product.price.toFixed(2)}</p>`;
-                    }
+                        }
+
 
                     productDiv.innerHTML = `
                         ${saleTag}
