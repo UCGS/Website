@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,12 +26,12 @@
             width: 100%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             z-index: 1000;
-            box-sizing: border-box; /* Prevents overflow */
+            box-sizing: border-box;
             overflow: hidden;
         }
 
         header img {
-            height: 50px; /* Adjust the logo size */
+            height: 50px;
         }
 
         nav ul {
@@ -154,7 +153,7 @@
             top: 10px;
             left: 10px;
             border-radius: 5px;
-            z-index: 10; 
+            z-index: 10;
         }
 
         footer {
@@ -206,86 +205,83 @@
     </footer>
 
     <script>
-    // Load products from the JSON file and display them
-    fetch('products.json', { cache: "no-store" })
-        .then(response => response.json())
-        .then(data => {
+        // Load products from the JSON file and display them
+        fetch('products.json', { cache: "no-store" })
+            .then(response => response.json())
+            .then(data => {
+                const productsList = document.getElementById('products-list');
+
+                // Loop through the product data and create HTML for each product
+                data.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+                    productDiv.setAttribute('data-price', product.price);
+
+                    let saleTag = '';
+                    let priceHTML = '';
+
+                    // Check if product is on sale
+                    if (product.onSale) {
+                        saleTag = '<div class="sale-tag">Sale</div>';
+                        priceHTML = `<p class="old-price">R${product.price.toFixed(2)}</p><p class="price">R${product.salePrice.toFixed(2)}</p>`;
+                    } else {
+                        priceHTML = `<p class="price">R${product.price.toFixed(2)}</p>`;
+                    }
+
+                    productDiv.innerHTML = `
+                        ${saleTag}
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        ${priceHTML}
+                    `;
+
+                    productsList.appendChild(productDiv);
+                });
+            })
+            .catch(error => console.error('Error loading products:', error));
+
+        // Search function
+        function searchProducts() {
+            const input = document.getElementById('search-input');
+            const filter = input.value.toLowerCase();
             const productsList = document.getElementById('products-list');
+            const products = productsList.getElementsByClassName('product');
 
-            // Loop through the product data and create HTML for each product
-            data.forEach(product => {
-                const productDiv = document.createElement('div');
-                productDiv.classList.add('product');
-                productDiv.setAttribute('data-price', product.price);
+            for (let i = 0; i < products.length; i++) {
+                const title = products[i].getElementsByTagName('h3')[0];
+                const description = products[i].getElementsByTagName('p')[0];
 
-                let saleTag = '';
-                let priceHTML = '';
-
-                // Check if product is on sale
-                if (product.onSale) {
-                    saleTag = '<div class="sale-tag">Sale</div>';
-                    priceHTML = `<p class="price">
-                        <span class="original-price">R${originalPrice.toFixed(2)}</span>
-                        <span class="sale-price">R${salePrice.toFixed(2)}</span>
-                    </p>`;
+                if (title.innerHTML.toLowerCase().indexOf(filter) > -1 || description.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                    products[i].style.display = "";
                 } else {
-                    priceHTML = `<p class="price">R${product.price.toFixed(2)}</p>`;
+                    products[i].style.display = "none";
                 }
-
-                productDiv.innerHTML = `
-                    ${saleTag}
-                    <img src="${product.image}" alt="${product.name}">
-                    <h3>${product.name}</h3>
-                    <p>${product.description}</p>
-                    ${priceHTML}
-                `;
-
-                productsList.appendChild(productDiv);
-            });
-        });
-
-    // Search function
-    function searchProducts() {
-        const input = document.getElementById('search-input');
-        const filter = input.value.toLowerCase();
-        const productsList = document.getElementById('products-list');
-        const products = productsList.getElementsByClassName('product');
-
-        for (let i = 0; i < products.length; i++) {
-            const title = products[i].getElementsByTagName('h3')[0];
-            const description = products[i].getElementsByTagName('p')[0];
-
-            if (title.innerHTML.toLowerCase().indexOf(filter) > -1 || description.innerHTML.toLowerCase().indexOf(filter) > -1) {
-                products[i].style.display = "";
-            } else {
-                products[i].style.display = "none";
             }
         }
-    }
 
-    // Sort products by price
-    function sortProducts() {
-        const sortOption = document.getElementById('sort-by').value;
-        const productsList = document.getElementById('products-list');
-        const products = Array.from(productsList.getElementsByClassName('product'));
+        // Sort products by price
+        function sortProducts() {
+            const sortOption = document.getElementById('sort-by').value;
+            const productsList = document.getElementById('products-list');
+            const products = Array.from(productsList.getElementsByClassName('product'));
 
-        products.sort((a, b) => {
-            const priceA = parseFloat(a.getAttribute('data-price'));
-            const priceB = parseFloat(b.getAttribute('data-price'));
+            products.sort((a, b) => {
+                const priceA = parseFloat(a.getAttribute('data-price'));
+                const priceB = parseFloat(b.getAttribute('data-price'));
 
-            if (sortOption === "low-high") {
-                return priceA - priceB;
-            } else if (sortOption === "high-low") {
-                return priceB - priceA;
-            }
-            return 0; // Default no sorting
-        });
+                if (sortOption === "low-high") {
+                    return priceA - priceB;
+                } else if (sortOption === "high-low") {
+                    return priceB - priceA;
+                }
+                return 0; // Default no sorting
+            });
 
-        // Reorder products in the DOM
-        products.forEach(product => productsList.appendChild(product));
-    }
-</script>
-
+            // Reorder products in the DOM
+            products.forEach(product => productsList.appendChild(product));
+        }
+    </script>
 </body>
 </html>
 
