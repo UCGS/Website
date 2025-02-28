@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,20 +16,21 @@
         }
 
         header {
-            background-color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            box-sizing: border-box; /* Prevents overflow */
-            overflow: hidden;
-        }
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box; /* Prevents overflow */
+    overflow: hidden;
+}
+
 
         header img {
             height: 50px; /* Adjust the logo size */
@@ -148,16 +150,277 @@
             z-index: 10; 
         }
 
-        .product .old-price {
-            font-size: 1em;
-            color: #666;
-            text-decoration: line-through;
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #fff;
+            margin-top: 40px;
+            font-size: 0.9em;
         }
 
-        .product .sale-price {
+        footer p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Unique Creations Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h1>Our Products</h1>
+            <p>Explore our beautifully crafted, bespoke laser-cut wooden creations. Each piece is designed and made with precision to bring a unique touch to your space.</p>
+
+            <!-- Search Bar and Sort Dropdown -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for products..." onkeyup="searchProducts()">
+                <select id="sort-by" onchange="sortProducts()">
+                    <option value="">Sort by Price</option>
+                    <option value="low-high">Low to High</option>
+                    <option value="high-low">High to Low</option>
+                </select>
+            </div>
+
+            <div class="products-list" id="products-list">
+                <!-- Products will be dynamically added here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Unique Creations laser cutting. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Load products from the JSON file and display them
+        fetch('products.json', { cache: "no-store" })
+            .then(response => response.json())
+            .then(data => {
+                const productsList = document.getElementById('products-list');
+
+                // Loop through the product data and create HTML for each product
+                data.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+                    productDiv.setAttribute('data-price', product.price);
+
+                    let saleTag = '';
+                    if (product.onSale) {
+                        saleTag = '<div class="sale-tag">Sale</div>';
+                    }
+
+                    productDiv.innerHTML = `
+                        ${saleTag}
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p class="price">R${product.price.toFixed(2)}</p>
+                    `;
+
+                    productsList.appendChild(productDiv);
+                });
+            });
+
+        // Search function
+        function searchProducts() {
+            const input = document.getElementById('search-input');
+            const filter = input.value.toLowerCase();
+            const productsList = document.getElementById('products-list');
+            const products = productsList.getElementsByClassName('product');
+
+            for (let i = 0; i < products.length; i++) {
+                const title = products[i].getElementsByTagName('h3')[0];
+                const description = products[i].getElementsByTagName('p')[0];
+
+                if (title.innerHTML.toLowerCase().indexOf(filter) > -1 || description.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                    products[i].style.display = "";
+                } else {
+                    products[i].style.display = "none";
+                }
+            }
+        }
+
+        // Sort products by price
+        function sortProducts() {
+            const sortOption = document.getElementById('sort-by').value;
+            const productsList = document.getElementById('products-list');
+            const products = Array.from(productsList.getElementsByClassName('product'));
+
+            products.sort((a, b) => {
+                const priceA = parseFloat(a.getAttribute('data-price'));
+                const priceB = parseFloat(b.getAttribute('data-price'));
+
+                if (sortOption === "low-high") {
+                    return priceA - priceB;
+                } else if (sortOption === "high-low") {
+                    return priceB - priceA;
+                }
+                return 0; // Default no sorting
+            });
+
+            // Reorder products in the DOM
+            products.forEach(product => productsList.appendChild(product));
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Unique Creations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #f2f2f2, #e6e6e6);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box; /* Prevents overflow */
+    overflow: hidden;
+}
+
+
+        header img {
+            height: 50px; /* Adjust the logo size */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: #0077b6;
+        }
+
+        main {
+            padding: 20px;
+            padding-top: 80px;
+        }
+
+        #products {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #products h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #products p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .search-container input {
+            padding: 10px;
+            font-size: 1em;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .search-container select {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .products-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .product {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin-top: 15px;
+            font-size: 1.3em;
+            color: #333;
+        }
+
+        .product p {
+            font-size: 1em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .product .price {
             font-size: 1.2em;
             font-weight: bold;
-            color: red; /* New sale price in red */
+            margin-top: 15px;
+            color: #0077b6;
+        }
+
+        .sale-tag {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+            z-index: 10; 
         }
 
         footer {
@@ -210,49 +473,33 @@
 
     <script>
         // Load products from the JSON file and display them
-       fetch('products.json', { cache: "no-store" })
-    .then(response => response.json())
-    .then(data => {
-        const productsList = document.getElementById('products-list');
+        fetch('products.json', { cache: "no-store" })
+            .then(response => response.json())
+            .then(data => {
+                const productsList = document.getElementById('products-list');
 
-        // Check if data is an array and is not empty
-        if (Array.isArray(data) && data.length > 0) {
-            // Loop through the product data and create HTML for each product
-            data.forEach(product => {
-                const productDiv = document.createElement('div');
-                productDiv.classList.add('product');
-                productDiv.setAttribute('data-price', product.price);
+                // Loop through the product data and create HTML for each product
+                data.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+                    productDiv.setAttribute('data-price', product.price);
 
-                let saleTag = '';
-                let priceHtml = `<p class="price">R${product.price.toFixed(2)}</p>`; // Default price
+                    let saleTag = '';
+                    if (product.onSale) {
+                        saleTag = '<div class="sale-tag">Sale</div>';
+                    }
 
-                // Check for sale
-                if (product.onSale) {
-                    saleTag = '<div class="sale-tag">Sale</div>';
-                    // Show the old price with strikethrough and the new sale price in red
-                    priceHtml = `
-                        <p class="old-price">R${product.oldPrice.toFixed(2)}</p>
-                        <p class="price sale-price">R${product.price.toFixed(2)}</p>
+                    productDiv.innerHTML = `
+                        ${saleTag}
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p class="price">R${product.price.toFixed(2)}</p>
                     `;
-                }
 
-                productDiv.innerHTML = `
-                    ${saleTag}
-                    <img src="${product.image}" alt="${product.name}">
-                    <h3>${product.name}</h3>
-                    <p>${product.description}</p>
-                    ${priceHtml}
-                `;
-
-                productsList.appendChild(productDiv);
+                    productsList.appendChild(productDiv);
+                });
             });
-        } else {
-            console.error("No products found or JSON is empty.");
-        }
-    })
-    .catch(error => {
-        console.error('Error fetching products:', error);
-    });
 
         // Search function
         function searchProducts() {
