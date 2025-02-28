@@ -24,3 +24,15 @@ iframe {
     height: 100%;
     border: 0;
 }
+/* Sale Price Styles */
+.product .sale-price {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product .original-price {
+    text-decoration: line-through;
+    color: #666;
+    margin-right: 10px;
+}
