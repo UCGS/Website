@@ -3,6 +3,7 @@
         "name": "UNO box (cards included)",
         "description": "Personalized laser-cut keychains in various designs.",
         "price": 115,
+        "salePrice": 100.00,
         "image": "images/product1.jpg",
         "onSale": true,
         "popular": false
@@ -11,6 +12,7 @@
         "name": "Rubber band wooden gun",
         "description": "Elegant, custom wall pieces to suit any room.",
         "price": 100.00,
+        "salePrice": 100.00,
         "image": "images/product2.jpg",
         "onSale": false,
         "popular": true
@@ -19,6 +21,7 @@
         "name": "Card box (cards included)",
         "description": "Perfectly crafted gifts for any occasion.",
         "price": 100,
+        "salePrice": 100.00,
         "image": "images/product3.jpg",
         "onSale": true,
         "popular": false
@@ -27,6 +30,7 @@
         "name": "Braai box gift",
         "description": "Durable, stylish coasters for your home or office.",
         "price": 120.00,
+        "salePrice": 100.00,
         "image": "images/product4.jpg",
         "onSale": false,
         "popular": true
@@ -35,6 +39,7 @@
         "name": "Custom Plaques",
         "description": "Personalized plaques for gifts or decor.",
         "price": 35.00,
+        "salePrice": 100.00,
         "image": "images/product5.jpg",
         "onSale": true,
         "popular": false
@@ -43,6 +48,7 @@
         "name": "Laser-Cut Jewelry",
         "description": "Intricate designs that make a statement.",
         "price": 20.00,
+        "salePrice": 100.00,
         "image": "images/product6.jpg",
         "onSale": false,
         "popular": true
