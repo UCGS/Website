@@ -224,7 +224,7 @@
                     // Check if product is on sale
                     if (product.onSale) {
                         saleTag = '<div class="sale-tag">Sale</div>';
-                        priceHTML = `<p class="old-price">R${product.price.toFixed(2)}</p><p class="sale-price" color = red>R${product.salePrice.toFixed(2)}</p>`;
+                        priceHTML = `<p class="old-price">R${product.price.toFixed(2)}</p><p class="sale-price">R${product.salePrice.toFixed(2)}</p>`;
                     } else {
                         priceHTML = `<p class="price">R${product.price.toFixed(2)}</p>`;
                     }
