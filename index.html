@@ -199,18 +199,18 @@
         console.log("On Sale Products:", onSaleProducts);
         console.log("Popular Products:", popularProducts);
 
-        // Display On Sale Products
+        // Display Sale Products
         onSaleProducts.forEach(product => {
             const productDiv = document.createElement('div');
             productDiv.classList.add('product');
 
-            productDiv.innerHTML = 
+            productDiv.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <div class="sale-label">On Sale</div>
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
                 <p class="price">R${product.price.toFixed(2)}</p>
-            ;
+            `;
 
             onSaleSection.appendChild(productDiv);
         });
@@ -220,31 +220,15 @@
             const productDiv = document.createElement('div');
             productDiv.classList.add('product');
 
-            productDiv.innerHTML = 
+            productDiv.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
                 <p class="price">R${product.price.toFixed(2)}</p>
-            ;
+            `;
 
             popularSection.appendChild(productDiv);
-});
-
-// Display Popular Products
-popularProducts.forEach(product => {
-    const productDiv = document.createElement('div');
-    productDiv.classList.add('product');
-
-    productDiv.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h3>${product.name}</h3>
-        <p>${product.description}</p>
-        <p class="price">R${product.price.toFixed(2)}</p>
-    `;
-
-    popularSection.appendChild(productDiv);
-});
-    })
+        });
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
     });
