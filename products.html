@@ -199,7 +199,7 @@
 
     <script>
         // Load products from the JSON file and display them
-        fetch('products.json')
+        fetch('products.json', { cache: "no-store" })
             .then(response => response.json())
             .then(data => {
                 const productsList = document.getElementById('products-list');
