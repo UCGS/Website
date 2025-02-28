@@ -1,32 +1,32 @@
 [
     {
-        "name": "Custom Keychains",
+        "name": "UNO box with UNO cards",
         "description": "Personalized laser-cut keychains in various designs.",
-        "price": 15.00,
+        "price": 90,
         "image": "images/product1.jpg",
         "onSale": true,
         "popular": false
     },
     {
-        "name": "Decorative Wall Art",
+        "name": "Rubber band wooden gun",
         "description": "Elegant, custom wall pieces to suit any room.",
-        "price": 40.00,
+        "price": 100.00,
         "image": "images/product2.jpg",
         "onSale": false,
         "popular": true
     },
     {
-        "name": "Engraved Gifts",
+        "name": "Card box (cards included)",
         "description": "Perfectly crafted gifts for any occasion.",
-        "price": 25.00,
+        "price": 100,
         "image": "images/product3.jpg",
         "onSale": true,
         "popular": false
     },
     {
-        "name": "Wooden Coasters",
+        "name": "Braai box gift",
         "description": "Durable, stylish coasters for your home or office.",
-        "price": 12.00,
+        "price": 120.00,
         "image": "images/product4.jpg",
         "onSale": false,
         "popular": true
