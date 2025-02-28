@@ -188,67 +188,68 @@
     </footer>
 
     <script>
-        // Load products from the JSON file and display them
-        fetch('products.json', { cache: "no-store" })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        const onSaleSection = document.getElementById('on-sale-products');
-        const popularSection = document.getElementById('popular-products');
+    // Load products from the JSON file and display them
+    fetch('products.json', { cache: "no-store" })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const onSaleSection = document.getElementById('on-sale-products');
+            const popularSection = document.getElementById('popular-products');
 
-        // Filter products on sale and popular products
-        const onSaleProducts = data.filter(product => product.onSale);
-        const popularProducts = data.filter(product => product.popular);
+            // Filter products on sale and popular products
+            const onSaleProducts = data.filter(product => product.onSale);
+            const popularProducts = data.filter(product => product.popular);
 
-        // Debugging: Log products to check filtering
-        console.log("On Sale Products:", onSaleProducts);
-        console.log("Popular Products:", popularProducts);
+            // Debugging: Log products to check filtering
+            console.log("On Sale Products:", onSaleProducts);
+            console.log("Popular Products:", popularProducts);
 
-        // Display On Sale Products
-onSaleProducts.forEach(product => {
-    const productDiv = document.createElement('div');
-    productDiv.classList.add('product');
+            // Display On Sale Products
+            onSaleProducts.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product');
 
-    // Calculate Discounted Price (Example: 20% off)
-    const discount = 0.2;
-    const discountedPrice = product.price - (product.price * discount);
+                // Use salePrice from the JSON file directly
+                const originalPrice = product.price;
+                const salePrice = product.salePrice;
 
-    productDiv.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <div class="sale-label">Sale</div>
-        <h3>${product.name}</h3>
-        <p>${product.description}</p>
-        <p class="price">
-            <span class="original-price">R${product.price.toFixed(2)}</span>
-            <span class="sale-price">R${discountedPrice.toFixed(2)}</span>
-        </p>
-    `;
+                productDiv.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <div class="sale-label">Sale</div>
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <p class="price">
+                        <span class="original-price">R${originalPrice.toFixed(2)}</span>
+                        <span class="sale-price">R${salePrice.toFixed(2)}</span>
+                    </p>
+                `;
 
-    onSaleSection.appendChild(productDiv);
-});
+                onSaleSection.appendChild(productDiv);
+            });
 
-// Display Popular Products
-popularProducts.forEach(product => {
-    const productDiv = document.createElement('div');
-    productDiv.classList.add('product');
+            // Display Popular Products
+            popularProducts.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product');
 
-    productDiv.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h3>${product.name}</h3>
-        <p>${product.description}</p>
-        <p class="price">R${product.price.toFixed(2)}</p>
-    `;
+                productDiv.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <p class="price">R${product.price.toFixed(2)}</p>
+                `;
 
-    popularSection.appendChild(productDiv);
-});
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
-    </script>
+                popularSection.appendChild(productDiv);
+            });
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+</script>
+
 </body>
 </html>
