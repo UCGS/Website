@@ -12,7 +12,7 @@
         "name": "Rubber band wooden gun",
         "description": "Elegant, custom wall pieces to suit any room.",
         "price": 100.00,
-        "salePrice": 100.00,
+        "salePrice": 90.00,
         "image": "images/product2.jpg",
         "onSale": false,
         "popular": true
@@ -21,7 +21,7 @@
         "name": "Card box (cards included)",
         "description": "Perfectly crafted gifts for any occasion.",
         "price": 100,
-        "salePrice": 100.00,
+        "salePrice": 85.00,
         "image": "images/product3.jpg",
         "onSale": true,
         "popular": false
