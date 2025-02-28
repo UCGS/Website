@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +23,7 @@
         }
 
         header img {
-            height: 50px; /* Adjust the logo size */
+            height: 50px;
         }
 
         nav ul {
@@ -59,12 +60,7 @@
             font-size: 1.2em;
         }
 
-        /* Products Showcase Section */
-        .products-showcase {
-            margin-top: 40px;
-        }
-
-        /* Common styles for both sections */
+        /* Product Sections */
         .product-section {
             margin-bottom: 40px;
         }
@@ -76,12 +72,12 @@
             color: #333;
         }
 
-        /* CSS Grid layout */
+        /* Grid Layout */
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatically create columns */
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
-            justify-items: center; /* Centers products */
+            justify-items: center;
         }
 
         .product {
@@ -91,7 +87,7 @@
             overflow: hidden;
             text-align: center;
             padding: 20px;
-            position: relative; /* Allow the label to be positioned over the image */
+            position: relative;
         }
 
         .product img {
@@ -111,18 +107,25 @@
             margin-top: 10px;
         }
 
-        /* Sale label styling */
+        .product .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #0077b6;
+        }
+
+        /* Sale label */
         .sale-label {
             position: absolute;
             top: 10px;
             left: 10px;
-            background-color: #ff6347; /* A bold, attention-grabbing color (Tomato) */
+            background-color: #ff6347;
             color: white;
             padding: 5px 10px;
             font-weight: bold;
             font-size: 1.2em;
             border-radius: 5px;
-            z-index: 10; /* Ensure the label appears above the image */
+            z-index: 10;
         }
 
         footer {
@@ -140,7 +143,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Langebaan Laser-Cut Creations Logo"> <!-- Placeholder for the logo -->
+        <img src="images/logo.png" alt="Langebaan Laser-Cut Creations Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -155,79 +158,69 @@
             <p>Beautiful, bespoke laser-cut wooden products crafted with love in Langebaan.</p>
         </section>
 
-        <section class="products-showcase">
-            <!-- On Sale Products Section -->
-            <div class="product-section">
-                <h2>On Sale</h2>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="images/product1.jpg" alt="Product 1">
-                        <div class="sale-label">On Sale</div>
-                        <h3>Custom Keychains</h3>
-                        <p>Personalized laser-cut keychains in various designs.</p>
-                    </div>
-		    <div class="product">
-                        <img src="images/product1.jpg" alt="Product 1">
-                        <div class="sale-label">On Sale</div>
-                        <h3>Custom Keychains</h3>
-                        <p>Personalized laser-cut keychains in various designs.</p>
-                    </div>
-                    <div class="product">
-                        <img src="images/product2.jpg" alt="Product 2">
-                        <div class="sale-label">On Sale</div>
-                        <h3>Decorative Wall Art</h3>
-                        <p>Elegant, custom wall pieces to suit any room.</p>
-                    </div>
-                    <div class="product">
-                        <img src="images/product3.jpg" alt="Product 3">
-                        <div class="sale-label">On Sale</div>
-                        <h3>Engraved Gifts</h3>
-                        <p>Perfectly crafted gifts for any occasion.</p>
-                    </div>
-                    <div class="product">
-                        <img src="images/product4.jpg" alt="Product 4">
-                        <div class="sale-label">On Sale</div>
-                        <h3>Wooden Coasters</h3>
-                        <p>A set of handcrafted wooden coasters for your home.</p>
-                    </div>
-                </div>
+        <!-- On Sale Products Section -->
+        <section class="product-section">
+            <h2>On Sale</h2>
+            <div class="product-grid" id="on-sale-products">
+                <!-- On Sale Products will be dynamically loaded here -->
             </div>
+        </section>
 
-            <!-- Popular Products Section -->
-            <div class="product-section">
-                <h2>Popular Products</h2>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="images/product5.jpg" alt="Product 5">
-                        <h3>Custom Plaques</h3>
-                        <p>Personalized plaques for gifts or decor.</p>
-                    </div>
-                    <div class="product">
-                        <img src="images/product6.jpg" alt="Product 6">
-                        <h3>Laser-Cut Jewelry</h3>
-                        <p>Intricate designs that make a statement.</p>
-                    </div>
-                    <div class="product">
-                        <img src="images/product7.jpg" alt="Product 7">
-                        <h3>Engraved Frames</h3>
-                        <p>Custom laser-engraved wooden photo frames.</p>
-                    </div>
-                    <div class="product">
-                        <img src="images/product8.jpg" alt="Product 8">
-                        <h3>Wooden Signs</h3>
-                        <p>Personalized wooden signs for your home or office.</p>
-                    </div>
-		    <div class="product">
-                        <img src="images/product8.jpg" alt="Product 8">
-                        <h3>Wooden Signs</h3>
-                        <p>Personalized wooden signs for your home or office.</p>
-                    </div>
-                </div>
+        <!-- Popular Products Section -->
+        <section class="product-section">
+            <h2>Popular Products</h2>
+            <div class="product-grid" id="popular-products">
+                <!-- Popular Products will be dynamically loaded here -->
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Langebaan Laser-Cut Creations. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Load products from the JSON file and display them
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                const onSaleSection = document.getElementById('on-sale-products');
+                const popularSection = document.getElementById('popular-products');
+
+                // Filter products on sale and popular products
+                const onSaleProducts = data.filter(product => product.onSale);
+                const popularProducts = data.filter(product => product.popular);
+
+                // Display On Sale Products
+                onSaleProducts.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+
+                    productDiv.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <div class="sale-label">On Sale</div>
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p class="price">R${product.price.toFixed(2)}</p>
+                    `;
+
+                    onSaleSection.appendChild(productDiv);
+                });
+
+                // Display Popular Products
+                popularProducts.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+
+                    productDiv.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p class="price">R${product.price.toFixed(2)}</p>
+                    `;
+
+                    popularSection.appendChild(productDiv);
+                });
+            });
+    </script>
 </body>
 </html>
