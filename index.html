@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,25 +6,141 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Add the same styles as before, with minor adjustments for sale text */
-        .sale-tag {
-            background-color: red;
-            color: white;
-            padding: 5px;
-            font-weight: bold;
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #f2f2f2, #e6e6e6);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px; /* Adjust the logo size */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: #0077b6;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #home {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #home h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #home p {
+            font-size: 1.2em;
+        }
+
+        /* Products Showcase Section */
+        .products-showcase {
+            margin-top: 40px;
+        }
+
+        /* Common styles for both sections */
+        .product-section {
+            margin-bottom: 40px;
+        }
+
+        .product-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        /* CSS Grid layout */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatically create columns */
+            gap: 20px;
+            justify-items: center; /* Centers products */
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            position: relative; /* Allow the label to be positioned over the image */
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin-top: 15px;
+            font-size: 1.3em;
+        }
+
+        .product p {
+            font-size: 1em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Sale label styling */
+        .sale-label {
             position: absolute;
             top: 10px;
             left: 10px;
+            background-color: #ff6347; /* A bold, attention-grabbing color (Tomato) */
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 1.2em;
             border-radius: 5px;
+            z-index: 10; /* Ensure the label appears above the image */
         }
-        .product {
-            position: relative;
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #fff;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            color: #666;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Langebaan Laser-Cut Creations Logo">
+        <img src="images/logo.png" alt="Langebaan Laser-Cut Creations Logo"> <!-- Placeholder for the logo -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -40,41 +155,79 @@
             <p>Beautiful, bespoke laser-cut wooden products crafted with love in Langebaan.</p>
         </section>
 
-        <section id="sale-products" class="products-showcase">
-            <h2>On Sale</h2>
-            <div id="sale-products-list" class="products-list"></div>
+        <section class="products-showcase">
+            <!-- On Sale Products Section -->
+            <div class="product-section">
+                <h2>On Sale</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="images/product1.jpg" alt="Product 1">
+                        <div class="sale-label">On Sale</div>
+                        <h3>Custom Keychains</h3>
+                        <p>Personalized laser-cut keychains in various designs.</p>
+                    </div>
+		    <div class="product">
+                        <img src="images/product1.jpg" alt="Product 1">
+                        <div class="sale-label">On Sale</div>
+                        <h3>Custom Keychains</h3>
+                        <p>Personalized laser-cut keychains in various designs.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/product2.jpg" alt="Product 2">
+                        <div class="sale-label">On Sale</div>
+                        <h3>Decorative Wall Art</h3>
+                        <p>Elegant, custom wall pieces to suit any room.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/product3.jpg" alt="Product 3">
+                        <div class="sale-label">On Sale</div>
+                        <h3>Engraved Gifts</h3>
+                        <p>Perfectly crafted gifts for any occasion.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/product4.jpg" alt="Product 4">
+                        <div class="sale-label">On Sale</div>
+                        <h3>Wooden Coasters</h3>
+                        <p>A set of handcrafted wooden coasters for your home.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Products Section -->
+            <div class="product-section">
+                <h2>Popular Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="images/product5.jpg" alt="Product 5">
+                        <h3>Custom Plaques</h3>
+                        <p>Personalized plaques for gifts or decor.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/product6.jpg" alt="Product 6">
+                        <h3>Laser-Cut Jewelry</h3>
+                        <p>Intricate designs that make a statement.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/product7.jpg" alt="Product 7">
+                        <h3>Engraved Frames</h3>
+                        <p>Custom laser-engraved wooden photo frames.</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/product8.jpg" alt="Product 8">
+                        <h3>Wooden Signs</h3>
+                        <p>Personalized wooden signs for your home or office.</p>
+                    </div>
+		    <div class="product">
+                        <img src="images/product8.jpg" alt="Product 8">
+                        <h3>Wooden Signs</h3>
+                        <p>Personalized wooden signs for your home or office.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Langebaan Laser-Cut Creations. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Fetch products data from the JSON file
-        fetch('products.json')
-            .then(response => response.json())
-            .then(data => {
-                const saleProductsList = document.getElementById('sale-products-list');
-                data.forEach(product => {
-                    if (product.onSale) {
-                        const productDiv = document.createElement('div');
-                        productDiv.classList.add('product');
-                        
-                        productDiv.innerHTML = `
-                            <img src="${product.image}" alt="${product.name}">
-                            <div class="sale-tag">Sale</div>
-                            <h3>${product.name}</h3>
-                            <p>${product.description}</p>
-                            <p class="price">$${product.price.toFixed(2)}</p>
-                        `;
-
-                        saleProductsList.appendChild(productDiv);
-                    }
-                });
-            })
-            .catch(error => {
-                console.error('Error loading the products:', error);
-            });
-    </script>
 </body>
 </html>
