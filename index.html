@@ -115,17 +115,15 @@
         }
 
         /* Sale label */
-        .sale-label {
+        .sale-tag {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
             position: absolute;
             top: 10px;
             left: 10px;
-            background-color: #ff6347;
-            color: white;
-            padding: 5px 10px;
-            font-weight: bold;
-            font-size: 1.2em;
             border-radius: 5px;
-            z-index: 10;
         }
 
         footer {
@@ -210,7 +208,7 @@ onSaleProducts.forEach(product => {
 
     productDiv.innerHTML = `
         <img src="${product.image}" alt="${product.name}">
-        <div class="sale-label">On Sale</div>
+        <div class="sale-label">Sale</div>
         <h3>${product.name}</h3>
         <p>${product.description}</p>
         <p class="price">
