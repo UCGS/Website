@@ -20,6 +20,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for emphasis */
+            z-index: 1000; /* Ensure it stays above other content */
         }
 
         header img {
@@ -44,6 +50,7 @@
 
         main {
             padding: 20px;
+            padding-top: 80px; /* Adjust this value to match your header height */
         }
 
         #home {
