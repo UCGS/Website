@@ -140,7 +140,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Langebaan Laser-Cut Creations Logo"> <!-- Placeholder for the logo -->
+        <img src="images/logo.png" alt="Langebaan Laser-Cut Creations Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -165,42 +165,7 @@
             </div>
 
             <div class="products-list" id="products-list">
-                <div class="product" data-price="15">
-                    <img src="images/product1.jpg" alt="Product 1">
-                    <h3>Custom Keychains</h3>
-                    <p>Personalized laser-cut keychains in various designs.</p>
-                    <p class="price">R15.00</p>
-                </div>
-                <div class="product" data-price="40">
-                    <img src="images/product2.jpg" alt="Product 2">
-                    <h3>Decorative Wall Art</h3>
-                    <p>Elegant, custom wall pieces to suit any room.</p>
-                    <p class="price">R40.00</p>
-                </div>
-                <div class="product" data-price="25">
-                    <img src="images/product3.jpg" alt="Product 3">
-                    <h3>Engraved Gifts</h3>
-                    <p>Perfectly crafted gifts for any occasion.</p>
-                    <p class="price">R25.00</p>
-                </div>
-                <div class="product" data-price="12">
-                    <img src="images/product4.jpg" alt="Product 4">
-                    <h3>Wooden Coasters</h3>
-                    <p>Durable, stylish coasters for your home or office.</p>
-                    <p class="price">R12.00</p>
-                </div>
-                <div class="product" data-price="35">
-                    <img src="images/product5.jpg" alt="Product 5">
-                    <h3>Custom Plaques</h3>
-                    <p>Personalized plaques for gifts or decor.</p>
-                    <p class="price">R35.00</p>
-                </div>
-                <div class="product" data-price="20">
-                    <img src="images/product6.jpg" alt="Product 6">
-                    <h3>Laser-Cut Jewelry</h3>
-                    <p>Intricate designs that make a statement.</p>
-                    <p class="price">R20.00</p>
-                </div>
+                <!-- Products will be dynamically added here by JavaScript -->
             </div>
         </section>
     </main>
@@ -209,6 +174,30 @@
     </footer>
 
     <script>
+        // Load products from the JSON file and display them
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                const productsList = document.getElementById('products-list');
+
+                // Loop through the product data and create HTML for each product
+                data.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+                    productDiv.setAttribute('data-price', product.price);
+
+                    productDiv.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p class="price">$${product.price.toFixed(2)}</p>
+                    `;
+
+                    productsList.appendChild(productDiv);
+                });
+            });
+
+        // Search function
         function searchProducts() {
             const input = document.getElementById('search-input');
             const filter = input.value.toLowerCase();
@@ -227,6 +216,7 @@
             }
         }
 
+        // Sort products by price
         function sortProducts() {
             const sortOption = document.getElementById('sort-by').value;
             const productsList = document.getElementById('products-list');
