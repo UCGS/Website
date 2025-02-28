@@ -135,6 +135,15 @@
             margin-top: 15px;
             color: #0077b6;
         }
+
+        .sale-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 15px;
+            color: red;
+            text-decoration: line-through;
+        }
+
         .sale-tag {
             background-color: red;
             color: white;
@@ -144,7 +153,7 @@
             top: 10px;
             left: 10px;
             border-radius: 5px;
-            z-index: 10;
+            z-index: 10; 
         }
 
         footer {
@@ -209,16 +218,14 @@
                     productDiv.setAttribute('data-price', product.price);
 
                     let saleTag = '';
-                    let priceHtml = `<p class="price">R${product.price.toFixed(2)}</p>`; // Default price
-
-                    // Check for sale
-                    if (product.onSale) {
+                    let priceHTML = '';
+                    
+                    // If product has a sale price, display both sale and regular prices
+                    if (product.salePrice) {
                         saleTag = '<div class="sale-tag">Sale</div>';
-                        // Show the old price with strikethrough and the new sale price in red
-                        priceHtml = `
-                            <p class="old-price">R${product.oldPrice.toFixed(2)}</p>
-                            <p class="price sale-price">R${product.price.toFixed(2)}</p>
-                        `;
+                        priceHTML = `<p class="sale-price">R${product.price.toFixed(2)}</p><p class="price">R${product.salePrice.toFixed(2)}</p>`;
+                    } else {
+                        priceHTML = `<p class="price">R${product.price.toFixed(2)}</p>`;
                     }
 
                     productDiv.innerHTML = `
@@ -226,7 +233,7 @@
                         <img src="${product.image}" alt="${product.name}">
                         <h3>${product.name}</h3>
                         <p>${product.description}</p>
-                        ${priceHtml}
+                        ${priceHTML}
                     `;
 
                     productsList.appendChild(productDiv);
