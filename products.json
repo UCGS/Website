@@ -52,7 +52,7 @@
         "image": "images/product6.jpg",
         "onSale": false,
         "popular": true
-    }
+    },
     {
         "name": "Kissing Tree wall art",
         "description": "Intricate designs that make a statement.",
@@ -61,7 +61,7 @@
         "image": "images/product7.jpg",
         "onSale": true,
         "popular": false
-    }
+    },
     {
         "name": "Tic-Tac-Toe",
         "description": "Intricate designs that make a statement.",
@@ -70,7 +70,7 @@
         "image": "images/product8.jpg",
         "onSale": false,
         "popular": false
-    }
+    },
     {
         "name": "God is Good Cross",
         "description": "Intricate designs that make a statement.",
@@ -79,7 +79,7 @@
         "image": "images/product9.jpg",
         "onSale": true,
         "popular": false
-    }
+    },
     {
         "name": "Bar-One gift box",
         "description": "Intricate designs that make a statement.",
@@ -88,7 +88,7 @@
         "image": "images/product10.jpg",
         "onSale": false,
         "popular": true
-    }
+    },
     {
         "name": "Song tehemed photo frame",
         "description": "Intricate designs that make a statement.",
