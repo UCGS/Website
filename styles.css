@@ -32,6 +32,12 @@ footer a:hover {
     display: block;
     position: relative;
 }
+img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
 
 iframe {
     width: 100%;
