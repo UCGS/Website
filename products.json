@@ -36,21 +36,67 @@
         "popular": true
     },
     {
-        "name": "Custom Plaques",
+        "name": "Wine butler",
         "description": "Personalized plaques for gifts or decor.",
-        "price": 35.00,
-        "salePrice": 100.00,
+        "price": 80.00,
+        "salePrice": 70.00,
         "image": "images/product5.jpg",
-        "onSale": true,
+        "onSale": false,
         "popular": false
     },
     {
-        "name": "Laser-Cut Jewelry",
+        "name": "Cutting board and wooden sppon combo",
         "description": "Intricate designs that make a statement.",
-        "price": 20.00,
-        "salePrice": 100.00,
+        "price": 220.00,
+        "salePrice": 200.00,
         "image": "images/product6.jpg",
         "onSale": false,
         "popular": true
     }
+    {
+        "name": "Kissing Tree wall art",
+        "description": "Intricate designs that make a statement.",
+        "price": 350.00,
+        "salePrice": 320.00,
+        "image": "images/product7.jpg",
+        "onSale": true,
+        "popular": false
+    }
+    {
+        "name": "Tic-Tac-Toe",
+        "description": "Intricate designs that make a statement.",
+        "price": 120.00,
+        "salePrice": 100.00,
+        "image": "images/product8.jpg",
+        "onSale": false,
+        "popular": false
+    }
+    {
+        "name": "God is Good Cross",
+        "description": "Intricate designs that make a statement.",
+        "price": 120.00,
+        "salePrice": 90.00,
+        "image": "images/product9.jpg",
+        "onSale": true,
+        "popular": false
+    }
+    {
+        "name": "Bar-One gift box",
+        "description": "Intricate designs that make a statement.",
+        "price": 40.00,
+        "salePrice": 30.00,
+        "image": "images/product10.jpg",
+        "onSale": false,
+        "popular": true
+    }
+    {
+        "name": "Song tehemed photo frame",
+        "description": "Intricate designs that make a statement.",
+        "price": 75.00,
+        "salePrice": 70.00,
+        "image": "images/product11.jpg",
+        "onSale": false,
+        "popular": true
+    }
+    
 ]
