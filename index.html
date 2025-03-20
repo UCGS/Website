@@ -28,10 +28,14 @@
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
             box-sizing: border-box;
+            height: 80px; /* Fixed height to prevent logo cutoff */
         }
 
         header img {
             height: 50px;
+            max-height: 100%; /* Prevent logo from exceeding header height */
+            width: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure the full logo is visible */
         }
 
         nav ul {
@@ -55,7 +59,7 @@
 
         main {
             padding: 0 20px;
-            padding-top: 80px;
+            padding-top: 100px; /* Increased to account for fixed header height */
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -202,9 +206,16 @@
             width: 100%;
         }
 
+        /* Modified hover effect that doesn't affect the sale tag */
         .product:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-image-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 15px;
         }
 
         .product img {
@@ -241,7 +252,7 @@
             font-size: 0.9em;
         }
 
-        /* Sale label */
+        /* Sale label - positioned relative to product-image-container */
         .sale-label {
             background-color: #e74c3c;
             color: white;
@@ -252,6 +263,7 @@
             left: 15px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 5; /* Ensure it stays on top */
         }
 
         footer {
@@ -295,6 +307,7 @@
             header {
                 flex-direction: column;
                 padding: 10px;
+                height: auto;
             }
             
             header img {
@@ -302,7 +315,7 @@
             }
             
             main {
-                padding-top: 120px;
+                padding-top: 140px; /* Increased for small screens */
             }
             
             .slideshow-container,
@@ -443,8 +456,10 @@
                     const salePrice = product.salePrice;
 
                     productDiv.innerHTML = `
-                        <div class="sale-label">Sale</div>
-                        <img src="${product.image}" alt="${product.name}">
+                        <div class="product-image-container">
+                            <div class="sale-label">Sale</div>
+                            <img src="${product.image}" alt="${product.name}">
+                        </div>
                         <h3>${product.name}</h3>
                         <p>${product.description}</p>
                         <p class="price">
@@ -466,7 +481,9 @@
                     productDiv.classList.add('product');
 
                     productDiv.innerHTML = `
-                        <img src="${product.image}" alt="${product.name}">
+                        <div class="product-image-container">
+                            <img src="${product.image}" alt="${product.name}">
+                        </div>
                         <h3>${product.name}</h3>
                         <p>${product.description}</p>
                         <p class="price">R${product.price.toFixed(2)}</p>
