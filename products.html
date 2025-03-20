@@ -81,7 +81,7 @@
                     productDiv.classList.add('product');
                     productDiv.setAttribute('data-price', product.onSale ? product.salePrice : product.price);
 
-                    let saleTag = product.onSale ? '<div class="sale-tag">Sale</div>' : '';
+                    let saleTag = product.onSale ? '<div class="sale-label">Sale</div>' : '';
                     let priceHTML = product.onSale 
                         ? `<p class="old-price">R${product.price.toFixed(2)}</p>
                            <p class="price sale-price">R${product.salePrice.toFixed(2)}</p>`
