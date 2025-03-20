@@ -44,28 +44,6 @@ iframe {
     height: 100%;
     border: 0;
 }
-/* Sale Price Styles */
-.product .sale-price {
-    color: red;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.product .original-price {
-    text-decoration: line-through;
-    color: #666;
-    margin-right: 10px;
-}
-html {
-    scroll-behavior: smooth;
-}
-.product img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.product:hover img {
-    transform: scale(1.05);
-}
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #f2f2f2, #e6e6e6);
