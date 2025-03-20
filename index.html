@@ -31,7 +31,6 @@
             box-sizing: border-box;
         }
 
-        /* Fix Logo Display */
         header img {
             height: 50px;
             max-height: 100%;
@@ -65,7 +64,6 @@
             margin: 0 auto;
         }
 
-        /* Fix Slideshow Display */
         .slideshow-container {
             position: relative;
             max-width: 100%;
@@ -88,6 +86,21 @@
         .slideshow-slide.active {
             display: block;
         }
+
+        .product-section {
+            margin-top: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
     </style>
 </head>
 <body>
@@ -98,41 +111,143 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- Slideshow Section -->
         <div class="slideshow-container">
             <div class="slideshow-slide active" style="background-image: url('images/slideshow1.jpg')"></div>
             <div class="slideshow-slide" style="background-image: url('images/slideshow2.jpg')"></div>
             <div class="slideshow-slide" style="background-image: url('images/slideshow3.jpg')"></div>
         </div>
+
+        <!-- On Sale Products Section -->
+        <section class="product-section">
+            <h2>On Sale</h2>
+            <div class="product-grid" id="on-sale-products">
+                <!-- On Sale Products will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Popular Products Section -->
+        <section class="product-section">
+            <h2>Popular Products</h2>
+            <div class="product-grid" id="popular-products">
+                <!-- Popular Products will be dynamically loaded here -->
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Unique Creations. All rights reserved.</p>
     </footer>
+
     <script>
+    // Slideshow functionality
     let slideIndex = 1;
+    
     function showSlides(n) {
         const slides = document.getElementsByClassName("slideshow-slide");
+        const dots = document.getElementsByClassName("slideshow-dot");
+        
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
-        for (let slide of slides) {
-            slide.classList.remove("active");
+        
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
         }
+        
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active");
+        }
+        
         slides[slideIndex-1].classList.add("active");
+        dots[slideIndex-1].classList.add("active");
     }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    // Auto advance slides
     function autoSlide() {
         slideIndex++;
         showSlides(slideIndex);
-        setTimeout(autoSlide, 5000);
+        setTimeout(autoSlide, 5000); // Change slide every 5 seconds
     }
+    
+    // Start slideshow
     window.onload = function() {
         showSlides(slideIndex);
         setTimeout(autoSlide, 5000);
     };
+
+    // Load products from the JSON file and display them
+    fetch('products.json', { cache: "no-store" })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const onSaleSection = document.getElementById('on-sale-products');
+            const popularSection = document.getElementById('popular-products');
+
+            // Filter products on sale and popular products
+            const onSaleProducts = data.filter(product => product.onSale);
+            const popularProducts = data.filter(product => product.popular);
+
+            // Display On Sale Products
+            if (onSaleProducts.length === 0) {
+                onSaleSection.innerHTML = '<p class="no-products">No products currently on sale. Check back soon!</p>';
+            } else {
+                onSaleProducts.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+
+                    // Use salePrice from the JSON file directly
+                    const originalPrice = product.price;
+                    const salePrice = product.salePrice;
+
+                    productDiv.innerHTML = `
+                        <div class="sale-label">Sale</div>
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p class="price">
+                            <span class="original-price">R${originalPrice.toFixed(2)}</span>
+                            <span class="sale-price">R${salePrice.toFixed(2)}</span>
+                        </p>
+                    `;
+
+                    onSaleSection.appendChild(productDiv);
+                });
+            }
+
+            // Display Popular Products
+            if (popularProducts.length === 0) {
+                popularSection.innerHTML = '<p class="no-products">Popular products coming soon!</p>';
+            } else {
+                popularProducts.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+
+                    productDiv.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <p class="price">R${product.price.toFixed(2)}</p>
+                    `;
+
+                    popularSection.appendChild(productDiv);
+                });
+            }
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+            document.getElementById('on-sale-products').innerHTML = '<p>Failed to load products. Please try again later.</p>';
+            document.getElementById('popular-products').innerHTML = '<p>Failed to load products. Please try again later.</p>';
+        });
     </script>
 </body>
 </html>
