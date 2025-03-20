@@ -95,7 +95,7 @@
             text-decoration: underline;
         }
 
-            /* Slideshow */
+             /* Slideshow */
         .slideshow-container {
             position: relative;
             max-width: 100%;
@@ -103,18 +103,18 @@
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            background-color: #fff;
+            height: 400px;
+            background-color: #fff; /* Background color to handle empty space */
             display: flex;
             align-items: center;
             justify-content: center;
-            height: auto; /* Allow container height to adjust to image aspect ratio */
         }
 
         .slideshow-slide {
             display: none;
             width: 100%;
-            height: auto; /* Maintain aspect ratio by allowing height to adjust */
-            background-size: contain; /* Ensure image fits within container without stretching */
+            height: 100%;
+            background-size: contain; /* Ensures full image visibility */
             background-position: center;
             background-repeat: no-repeat;
             animation: fade 1.5s;
