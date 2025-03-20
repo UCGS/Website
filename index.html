@@ -1,4 +1,4 @@
-
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +95,7 @@
             text-decoration: underline;
         }
 
-        /* Slideshow */
+            /* Slideshow */
         .slideshow-container {
             position: relative;
             max-width: 100%;
@@ -104,17 +104,20 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             height: 400px;
-            object-fit: contain;
+            background-color: #fff; /* Background color to handle empty space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .slideshow-slide {
             display: none;
             width: 100%;
             height: 100%;
-            background-size: cover;
+            background-size: contain; /* Ensures full image visibility */
             background-position: center;
+            background-repeat: no-repeat;
             animation: fade 1.5s;
-            object-fit: contain;
         }
 
         .slideshow-slide.active {
@@ -126,7 +129,7 @@
             to {opacity: 1}
         }
 
-
+        /* Slideshow dots */
         .slideshow-dots {
             text-align: center;
             position: absolute;
