@@ -134,8 +134,8 @@ main {
      /* Slideshow */
 .slideshow-container {
     position: relative;
-    max-width: 100%;
-    margin: 40px 0 40px;
+    max-width: 70%; /* Adjust this value as needed */
+    margin: 20px auto; 
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
