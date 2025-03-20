@@ -12,23 +12,24 @@
             background: linear-gradient(to right, #f2f2f2, #e6e6e6);
             margin: 0;
             padding: 0;
-            color: #333;
         }
 
         header {
-            background-color: #fff;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            box-sizing: border-box;
-        }
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box; /* Prevents overflow */
+    overflow: hidden;
+}
+
 
         header img {
             height: 50px;
@@ -37,16 +38,13 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 30px;
-            margin: 0;
-            padding: 0;
+            gap: 20px;
         }
 
         nav a {
             text-decoration: none;
             color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease;
+            font-weight: 400;
         }
 
         nav a:hover {
@@ -54,265 +52,100 @@
         }
 
         main {
-            padding: 0 20px;
-            padding-top: 80px;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 0px;
+            padding-top: 80px; /* Adjust this value to match your header height */
         }
 
         #home {
             text-align: center;
-            margin-bottom: 50px;
-            padding: 20px;
+            margin-bottom: 40px;
         }
 
         #home h1 {
-            font-size: 2.8em;
-            margin-bottom: 15px;
-            color: #0077b6;
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
 
         #home p {
             font-size: 1.2em;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto 20px;
-        }
-
-        #home a {
-            color: #0077b6;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        #home a:hover {
-            color: #005b8e;
-            text-decoration: underline;
-        }
-
-        /* Slideshow */
-        .slideshow-container {
-            position: relative;
-            max-width: 100%;
-            margin: 20px 0 40px;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            height: 400px;
-        }
-
-        .slideshow-slide {
-            display: none;
-            width: 100%;
-            height: 400px;
-            background-size: cover;
-            background-position: center;
-            animation: fade 1.5s;
-        }
-
-        .slideshow-slide.active {
-            display: block;
-        }
-
-        @keyframes fade {
-            from {opacity: 0.4}
-            to {opacity: 1}
-        }
-
-        .slideshow-caption {
-            position: absolute;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-
-        .slideshow-dots {
-            text-align: center;
-            position: absolute;
-            bottom: 15px;
-            width: 100%;
-        }
-
-        .slideshow-dot {
-            height: 12px;
-            width: 12px;
-            margin: 0 5px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .slideshow-dot.active {
-            background-color: #0077b6;
         }
 
         /* Product Sections */
         .product-section {
-            margin-bottom: 60px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
         }
 
         .product-section h2 {
             text-align: center;
-            margin-bottom: 30px;
-            font-size: 2.2em;
-            color: #0077b6;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .product-section h2:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: #0077b6;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
         }
 
         /* Grid Layout */
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
             justify-items: center;
         }
 
         .product {
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
             padding: 20px;
             position: relative;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 100%;
-        }
-
-        .product:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         .product img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
             border-radius: 8px;
         }
 
         .product h3 {
-            margin-top: 20px;
-            font-size: 1.4em;
-            color: #333;
+            margin-top: 15px;
+            font-size: 1.3em;
         }
 
         .product p {
             font-size: 1em;
             color: #666;
             margin-top: 10px;
-            line-height: 1.5;
         }
 
         .product .price {
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: bold;
             margin-top: 15px;
-            color: #0077b6;
-        }
-
-        .original-price {
-            text-decoration: line-through;
-            color: #999;
-            margin-right: 10px;
-            font-size: 0.9em;
+            color: #666;
         }
 
         /* Sale label */
         .sale-label {
-            background-color: #e74c3c;
+            background-color: red;
             color: white;
-            padding: 8px 12px;
+            padding: 5px;
             font-weight: bold;
             position: absolute;
-            top: 15px;
-            left: 15px;
+            top: 10px;
+            left: 10px;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         footer {
             text-align: center;
-            padding: 20px 0;
+            padding: 10px 0;
             background-color: #fff;
             margin-top: 40px;
             font-size: 0.9em;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
         }
 
         footer p {
             color: #666;
-            margin: 0;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            nav ul {
-                gap: 15px;
-            }
-            
-            #home h1 {
-                font-size: 2.2em;
-            }
-            
-            .slideshow-container {
-                height: 300px;
-            }
-            
-            .slideshow-slide {
-                height: 300px;
-            }
-            
-            .product-grid {
-                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                flex-direction: column;
-                padding: 10px;
-            }
-            
-            header img {
-                margin-bottom: 10px;
-            }
-            
-            main {
-                padding-top: 120px;
-            }
-            
-            .slideshow-container,
-            .slideshow-slide {
-                height: 250px;
-            }
-            
-            .product-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -324,35 +157,15 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home">
             <h1>Welcome to Unique Creations Laser Cutting</h1>
-            <p>Transforming ideas into beautifully crafted designs with precision and care. We specialize in custom laser cutting for all your creative needs.</p>
-            <p>We'd be happy to personalize your order to make it truly special! Please note, a small design fee applies (R90), and there's a minimum order amount of R300 on personalized orders. We offer delivery through Pudo, with delivery costs determined by the size of your order.</p>
-            <p>To place an order contact us on WhatsApp at <a href="tel:+27827827786">(+27)82 782 7786</a> or email us at <a href="mailto:uniquecreationsweb@gmail.com">uniquecreationsweb@gmail.com</a></p>
+            <p>We’d be happy to personalize your order to make it truly special! Please note, a small design fee applies (R90), and there’s a minimum order amount of R300 on personalized orders. We offer delivery through Pudo, with delivery costs determined by the size of your order.</p>
+            <p.>To place an order contact us on WhatsApp at <a href="tel:+27827827786">(+27)82 782 7786</a> or email us at <a href="mailto:uniquecreationsweb@gmail.com">uniquecreationsweb@gmail.com</a></p.>
         </section>
-
-        <!-- Slideshow Section -->
-        <div class="slideshow-container">
-            <div class="slideshow-slide active" style="background-image: url('images/slideshow1.jpg')">
-                <div class="slideshow-caption">Custom Laser Cut Designs</div>
-            </div>
-            <div class="slideshow-slide" style="background-image: url('images/slideshow2.jpg')">
-                <div class="slideshow-caption">Personalized Gifts</div>
-            </div>
-            <div class="slideshow-slide" style="background-image: url('images/slideshow3.jpg')">
-                <div class="slideshow-caption">High Quality Craftsmanship</div>
-            </div>
-            <div class="slideshow-dots">
-                <span class="slideshow-dot active" onclick="currentSlide(1)"></span>
-                <span class="slideshow-dot" onclick="currentSlide(2)"></span>
-                <span class="slideshow-dot" onclick="currentSlide(3)"></span>
-            </div>
-        </div>
 
         <!-- On Sale Products Section -->
         <section class="product-section">
@@ -375,45 +188,6 @@
     </footer>
 
     <script>
-    // Slideshow functionality
-    let slideIndex = 1;
-    
-    function showSlides(n) {
-        const slides = document.getElementsByClassName("slideshow-slide");
-        const dots = document.getElementsByClassName("slideshow-dot");
-        
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].classList.remove("active");
-        }
-        
-        for (let i = 0; i < dots.length; i++) {
-            dots[i].classList.remove("active");
-        }
-        
-        slides[slideIndex-1].classList.add("active");
-        dots[slideIndex-1].classList.add("active");
-    }
-    
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-    
-    // Auto advance slides
-    function autoSlide() {
-        slideIndex++;
-        showSlides(slideIndex);
-        setTimeout(autoSlide, 5000); // Change slide every 5 seconds
-    }
-    
-    // Start slideshow
-    window.onload = function() {
-        showSlides(slideIndex);
-        setTimeout(autoSlide, 5000);
-    };
-
     // Load products from the JSON file and display them
     fetch('products.json', { cache: "no-store" })
         .then(response => {
@@ -430,57 +204,52 @@
             const onSaleProducts = data.filter(product => product.onSale);
             const popularProducts = data.filter(product => product.popular);
 
+            // Debugging: Log products to check filtering
+            console.log("On Sale Products:", onSaleProducts);
+            console.log("Popular Products:", popularProducts);
+
             // Display On Sale Products
-            if (onSaleProducts.length === 0) {
-                onSaleSection.innerHTML = '<p class="no-products">No products currently on sale. Check back soon!</p>';
-            } else {
-                onSaleProducts.forEach(product => {
-                    const productDiv = document.createElement('div');
-                    productDiv.classList.add('product');
+            onSaleProducts.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product');
 
-                    // Use salePrice from the JSON file directly
-                    const originalPrice = product.price;
-                    const salePrice = product.salePrice;
+                // Use salePrice from the JSON file directly
+                const originalPrice = product.price;
+                const salePrice = product.salePrice;
 
-                    productDiv.innerHTML = `
-                        <div class="sale-label">Sale</div>
-                        <img src="${product.image}" alt="${product.name}">
-                        <h3>${product.name}</h3>
-                        <p>${product.description}</p>
-                        <p class="price">
-                            <span class="original-price">R${originalPrice.toFixed(2)}</span>
-                            <span class="sale-price">R${salePrice.toFixed(2)}</span>
-                        </p>
-                    `;
+                productDiv.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <div class="sale-label">Sale</div>
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <p class="price">
+                        <span class="original-price">R${originalPrice.toFixed(2)}</span>
+                        <span class="sale-price">R${salePrice.toFixed(2)}</span>
+                    </p>
+                `;
 
-                    onSaleSection.appendChild(productDiv);
-                });
-            }
+                onSaleSection.appendChild(productDiv);
+            });
 
             // Display Popular Products
-            if (popularProducts.length === 0) {
-                popularSection.innerHTML = '<p class="no-products">Popular products coming soon!</p>';
-            } else {
-                popularProducts.forEach(product => {
-                    const productDiv = document.createElement('div');
-                    productDiv.classList.add('product');
+            popularProducts.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product');
 
-                    productDiv.innerHTML = `
-                        <img src="${product.image}" alt="${product.name}">
-                        <h3>${product.name}</h3>
-                        <p>${product.description}</p>
-                        <p class="price">R${product.price.toFixed(2)}</p>
-                    `;
+                productDiv.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <p class="price">R${product.price.toFixed(2)}</p>
+                `;
 
-                    popularSection.appendChild(productDiv);
-                });
-            }
+                popularSection.appendChild(productDiv);
+            });
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
-            document.getElementById('on-sale-products').innerHTML = '<p>Failed to load products. Please try again later.</p>';
-            document.getElementById('popular-products').innerHTML = '<p>Failed to load products. Please try again later.</p>';
         });
-    </script>
+</script>
+
 </body>
 </html>
