@@ -247,7 +247,7 @@ main {
     font-size: 1.3em;
     font-weight: bold;
     margin-top: 15px;
-    color: #0077b6;
+    color: #999;
 }
 
 .original-price {
@@ -327,30 +327,14 @@ footer p {
         width: 100%;
     }
     
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
-        .products-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 30px;
-        }
-
-        .product .price {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 15px;
-            color: #0077b6;
-        }
 
         .old-price {
             font-size: 1.2em;
             font-weight: bold;
             margin-top: 15px;
-            color: #0077b6;
+            color: #999;
             text-decoration: line-through;
         }
 
