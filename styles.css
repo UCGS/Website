@@ -238,13 +238,13 @@ main {
 }
 
 .product img {
-    width: 200px;
+    width: 100%; /* Ensures image does not exceed container */
+    max-width: 300px; /* Prevents image from being too wide */
     height: 200px;
     object-fit: contain;
-    display: block;
-    margin: 0 auto; /* Ensures the image itself is centered */
     border-radius: 10px;
-    background-color: white; /* Optional: Helps avoid transparent gaps */
+    display: block; /* Ensures no inline spacing issues */
+}
 }
 
 .product h3 {
