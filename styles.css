@@ -259,15 +259,14 @@ main {
 
 /* Sale label */
 .sale-label {
-    background-color: #e74c3c;
+    background-color: red;
     color: white;
-    padding: 8px 12px;
+    padding: 5px;
     font-weight: bold;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
