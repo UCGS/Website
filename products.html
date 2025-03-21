@@ -33,11 +33,6 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .product:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
         .product img {
             width: 100%;
             height: 200px;
@@ -102,22 +97,15 @@
             box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
         }
 
-        /* Category tag styles */
-        .category-tag {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #6366f1;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 50px;
-            font-size: 12px;
+        /* Category text style */
+        .product-category {
+            font-size: 14px;
+            color: #6366f1;
+            margin: 5px 0;
             font-weight: 500;
-            box-shadow: 0 2px 5px rgba(99, 102, 241, 0.3);
-            z-index: 1;
         }
 
-        /* Sale label styling */
+        /* Original sale label styling */
         .sale-label {
             position: absolute;
             top: 10px;
@@ -125,11 +113,9 @@
             background-color: #ef4444;
             color: white;
             padding: 5px 12px;
-            border-radius: 50px;
+            border-radius: 5px;
             font-size: 12px;
             font-weight: 500;
-            box-shadow: 0 2px 5px rgba(239, 68, 68, 0.3);
-            z-index: 1;
         }
 
         .old-price {
@@ -200,7 +186,6 @@
                     productDiv.setAttribute('data-category', product.category);
 
                     let saleTag = product.onSale ? '<div class="sale-label">Sale</div>' : '';
-                    let categoryTag = `<div class="category-tag">${product.category}</div>`;
                     
                     let priceHTML = product.onSale 
                         ? `<p class="old-price">R${product.price.toFixed(2)}</p>
@@ -209,9 +194,9 @@
 
                     productDiv.innerHTML = `
                         ${saleTag}
-                        ${categoryTag}
                         <img src="${product.image}" alt="${product.name}">
                         <h3>${product.name}</h3>
+                        <p class="product-category">${product.category}</p>
                         <p>${product.description}</p>
                         ${priceHTML}
                     `;
@@ -225,8 +210,9 @@
             const input = document.getElementById('search-input').value.toLowerCase();
             document.querySelectorAll('.product').forEach(product => {
                 const title = product.querySelector('h3').innerText.toLowerCase();
-                const description = product.querySelector('p').innerText.toLowerCase();
-                product.style.display = title.includes(input) || description.includes(input) ? "block" : "none";
+                const description = product.querySelector('p:not(.product-category):not(.price):not(.old-price)').innerText.toLowerCase();
+                const category = product.querySelector('.product-category').innerText.toLowerCase();
+                product.style.display = title.includes(input) || description.includes(input) || category.includes(input) ? "block" : "none";
             });
         }
 
