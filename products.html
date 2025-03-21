@@ -36,6 +36,7 @@
             object-fit: contain;
             border-radius: 10px;
             background-color: white;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -62,6 +63,14 @@
                     <option value="low-high">Low to High</option>
                     <option value="high-low">High to Low</option>
                 </select>
+                <select id="category-filter" onchange="filterByCategory()">
+                    <option value="">Filter by Category</option>
+                    <option value="Games & Puzzles">Games & Puzzles</option>
+                    <option value="Home & Decor">Home & Decor</option>
+                    <option value="Kitchen & Dining">Kitchen & Dining</option>
+                    <option value="Gifts & Accessories">Gifts & Accessories</option>
+                    <option value="Religious Items">Religious Items</option>
+                </select>
             </div>
 
             <div class="products-list" id="products-list"></div>
@@ -80,6 +89,7 @@
                     const productDiv = document.createElement('div');
                     productDiv.classList.add('product');
                     productDiv.setAttribute('data-price', product.onSale ? product.salePrice : product.price);
+                    productDiv.setAttribute('data-category', product.category);
 
                     let saleTag = product.onSale ? '<div class="sale-label">Sale</div>' : '';
                     let priceHTML = product.onSale 
@@ -121,6 +131,14 @@
             });
 
             products.forEach(product => productsList.appendChild(product));
+        }
+
+        function filterByCategory() {
+            const selectedCategory = document.getElementById('category-filter').value;
+            document.querySelectorAll('.product').forEach(product => {
+                const category = product.getAttribute('data-category');
+                product.style.display = selectedCategory === "" || category === selectedCategory ? "block" : "none";
+            });
         }
     </script>
 </body>
