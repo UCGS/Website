@@ -45,7 +45,7 @@
         "popular": false
     },
     {
-        "name": "Cutting board and wooden sppon combo",
+        "name": "Cutting board and wooden spoon combo",
         "description": "Intricate designs that make a statement.",
         "price": 220.00,
         "salePrice": 200.00,
@@ -98,5 +98,77 @@
         "onSale": false,
         "popular": true
     }
+    {
+        "name": "Tree-of-life wall art",
+        "description": "Intricate designs that make a statement.",
+        "price": 120.00,
+        "salePrice": 100.00,
+        "image": "images/product12.jpg",
+        "onSale": false,
+        "popular": false
+    },
+    {
+        "name": "Mini tic-tac-toe gift",
+        "description": "Intricate designs that make a statement.",
+        "price": 75.00,
+        "salePrice": 60.00,
+        "image": "images/product13.jpg",
+        "onSale": false,
+        "popular": false
+    },
+    {
+        "name": "Eiffel tower 4 piece wall art",
+        "description": "Intricate designs that make a statement.",
+        "price": 400.00,
+        "salePrice": 375.00,
+        "image": "images/product14.jpg",
+        "onSale": false,
+        "popular": false
+    },
+    {
+        "name": "Earing stand",
+        "description": "Intricate designs that make a statement.",
+        "price": 120.00,
+        "salePrice": 100.00,
+        "image": "images/product15.jpg",
+        "onSale": false,
+        "popular": false
+    },
+    {
+        "name": "World map 3 piece wall art",
+        "description": "Intricate designs that make a statement.",
+        "price": 120.00,
+        "salePrice": 100.00,
+        "image": "images/product16.jpg",
+        "onSale": false,
+        "popular": false
+    },
+    {
+        "name": "Weskus serviette holder",
+        "description": "Intricate designs that make a statement.",
+        "price": 130.00,
+        "salePrice": 100.00,
+        "image": "images/product17.jpg",
+        "onSale": false,
+        "popular": false
+    },
+    {
+        "name": "Door hanger",
+        "description": "Intricate designs that make a statement.",
+        "price": 85.00,
+        "salePrice": 70.00,
+        "image": "images/product18.jpg",
+        "onSale": false,
+        "popular": false
+    },
+    {
+        "name": "book mark",
+        "description": "Intricate designs that make a statement.",
+        "price": 45.00,
+        "salePrice": 40.00,
+        "image": "images/product19.jpg",
+        "onSale": false,
+        "popular": false
+    },
     
 ]
