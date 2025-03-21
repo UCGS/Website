@@ -22,6 +22,7 @@
             margin: 0 auto; /* Ensures the grid stays centered */
         }
         .product {
+            height: 100%;
             max-width: 300px; /* Prevents single product from stretching */
             width: 100%; /* Ensures consistency */
             margin: 0 auto; /* Centers individual items */
@@ -33,10 +34,13 @@
             padding: 20px;
             position: relative;
             transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;        
+            flex-direction: column; 
         }
 
         .product img {
             width: 100%;
+            border-radius: 10px; /* Makes the image corners rounded */
             height: 200px;
             object-fit: contain;
             border-radius: 10px;
