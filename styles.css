@@ -343,3 +343,73 @@ footer p {
             font-weight: bold;
             color: red !important; /* Force the color to be red */
         }
+/* Search Bar */
+.search-container input, 
+.search-container select {
+    width: 100%;
+    max-width: 300px; /* Limiting the width for better mobile view */
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.search-container input:focus, 
+.search-container select:focus {
+    border-color: #00aaff; /* Blue highlight on focus */
+    outline: none;
+}
+
+/* Button Styling */
+.search-container select {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.search-container input {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Modern Button Style */
+.search-container input[type="text"], 
+.search-container select {
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container input[type="text"]:hover, 
+.search-container select:hover {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+}
+
+.search-container input[type="text"]:focus, 
+.search-container select:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.2);
+}
+
+/* Clear Button */
+.search-container button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.search-container button:hover {
+    background-color: #0077cc;
+}
+
+.search-container button:focus {
+    outline: none;
+}
+
