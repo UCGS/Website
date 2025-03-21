@@ -1,7 +1,7 @@
 [
     {
         "name": "UNO box (cards included)",
-        "description": "Personalized laser-cut keychains in various designs.",
+        "description": "A stylish wooden box for your UNO cards.",
         "price": 115,
         "salePrice": 100.00,
         "image": "images/product1.jpg",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Rubber band wooden gun",
-        "description": "Elegant, custom wall pieces to suit any room.",
+        "description": "Fun and nostalgic wooden rubber band gun.",
         "price": 100.00,
         "salePrice": 90.00,
         "image": "images/product2.jpg",
@@ -19,7 +19,7 @@
     },
     {
         "name": "Card box (cards included)",
-        "description": "Perfectly crafted gifts for any occasion.",
+        "description": "Elegant storage for your favorite card games.",
         "price": 100,
         "salePrice": 85.00,
         "image": "images/product3.jpg",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Braai box gift",
-        "description": "Durable, stylish coasters for your home or office.",
+        "description": "The perfect wooden gift box for braai lovers.",
         "price": 120.00,
         "salePrice": 100.00,
         "image": "images/product4.jpg",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Wine butler",
-        "description": "Personalized plaques for gifts or decor.",
+        "description": "A sleek holder for wine and glasses.",
         "price": 80.00,
         "salePrice": 70.00,
         "image": "images/product5.jpg",
@@ -46,7 +46,7 @@
     },
     {
         "name": "Cutting board and wooden spoon combo",
-        "description": "Intricate designs that make a statement.",
+        "description": "A practical and stylish kitchen set.",
         "price": 220.00,
         "salePrice": 200.00,
         "image": "images/product6.jpg",
@@ -55,7 +55,7 @@
     },
     {
         "name": "Kissing Tree wall art",
-        "description": "Intricate designs that make a statement.",
+        "description": "A romantic wooden wall art piece.",
         "price": 350.00,
         "salePrice": 320.00,
         "image": "images/product7.jpg",
@@ -64,7 +64,7 @@
     },
     {
         "name": "Tic-Tac-Toe",
-        "description": "Intricate designs that make a statement.",
+        "description": "A classic wooden Tic-Tac-Toe game.",
         "price": 120.00,
         "salePrice": 100.00,
         "image": "images/product8.jpg",
@@ -73,7 +73,7 @@
     },
     {
         "name": "God is Good Cross",
-        "description": "Intricate designs that make a statement.",
+        "description": "A beautifully crafted wooden cross.",
         "price": 120.00,
         "salePrice": 90.00,
         "image": "images/product9.jpg",
@@ -82,7 +82,7 @@
     },
     {
         "name": "Bar-One gift box",
-        "description": "Intricate designs that make a statement.",
+        "description": "A charming gift box for Bar-One lovers.",
         "price": 40.00,
         "salePrice": 30.00,
         "image": "images/product10.jpg",
@@ -91,7 +91,7 @@
     },
     {
         "name": "Song themed photo frame",
-        "description": "Intricate designs that make a statement.",
+        "description": "A personalized frame inspired by music.",
         "price": 75.00,
         "salePrice": 70.00,
         "image": "images/product11.jpg",
@@ -100,7 +100,7 @@
     },
     {
         "name": "Tree-of-life wall art",
-        "description": "Intricate designs that make a statement.",
+        "description": "A stunning Tree-of-Life wooden design.",
         "price": 120.00,
         "salePrice": 100.00,
         "image": "images/product12.JPG",
@@ -109,7 +109,7 @@
     },
     {
         "name": "Mini tic-tac-toe gift",
-        "description": "Intricate designs that make a statement.",
+        "description": "A compact Tic-Tac-Toe set for fun on the go.",
         "price": 75.00,
         "salePrice": 60.00,
         "image": "images/product13.JPG",
@@ -118,7 +118,7 @@
     },
     {
         "name": "Eiffel tower 4 piece wall art",
-        "description": "Intricate designs that make a statement.",
+        "description": "A striking four-piece Eiffel Tower artwork.",
         "price": 400.00,
         "salePrice": 375.00,
         "image": "images/product14.JPG",
@@ -127,7 +127,7 @@
     },
     {
         "name": "Earring stand",
-        "description": "Intricate designs that make a statement.",
+        "description": "A stylish wooden stand for earrings.",
         "price": 120.00,
         "salePrice": 100.00,
         "image": "images/product15.JPG",
@@ -136,7 +136,7 @@
     },
     {
         "name": "World map 3 piece wall art",
-        "description": "Intricate designs that make a statement.",
+        "description": "A detailed wooden world map in three pieces.",
         "price": 120.00,
         "salePrice": 100.00,
         "image": "images/product16.JPG",
@@ -145,7 +145,7 @@
     },
     {
         "name": "Weskus serviette holder",
-        "description": "Intricate designs that make a statement.",
+        "description": "A unique serviette holder inspired by Weskus.",
         "price": 130.00,
         "salePrice": 100.00,
         "image": "images/product17.JPG",
@@ -154,7 +154,7 @@
     },
     {
         "name": "Door hanger",
-        "description": "Intricate designs that make a statement.",
+        "description": "A custom wooden door hanger.",
         "price": 85.00,
         "salePrice": 70.00,
         "image": "images/product18.JPG",
@@ -163,12 +163,11 @@
     },
     {
         "name": "Book mark",
-        "description": "Intricate designs that make a statement.",
+        "description": "A beautifully crafted wooden bookmark.",
         "price": 45.00,
         "salePrice": 40.00,
         "image": "images/product19.JPG",
         "onSale": false,
         "popular": false
     }
-    
 ]
