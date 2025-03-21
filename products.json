@@ -6,7 +6,8 @@
         "salePrice": 100.00,
         "image": "images/product1.jpg",
         "onSale": true,
-        "popular": false
+        "popular": false,
+        "category": "Games & Puzzles"
     },
     {
         "name": "Rubber band wooden gun",
@@ -15,7 +16,8 @@
         "salePrice": 90.00,
         "image": "images/product2.jpg",
         "onSale": false,
-        "popular": true
+        "popular": true,
+        "category": "Games & Puzzles"
     },
     {
         "name": "Card box (cards included)",
@@ -24,7 +26,8 @@
         "salePrice": 85.00,
         "image": "images/product3.jpg",
         "onSale": true,
-        "popular": false
+        "popular": false,
+        "category": "Games & Puzzles"
     },
     {
         "name": "Braai box gift",
@@ -33,7 +36,8 @@
         "salePrice": 100.00,
         "image": "images/product4.jpg",
         "onSale": false,
-        "popular": true
+        "popular": true,
+        "category": "Gifts & Accessories"
     },
     {
         "name": "Wine butler",
@@ -42,7 +46,8 @@
         "salePrice": 70.00,
         "image": "images/product5.jpg",
         "onSale": false,
-        "popular": false
+        "popular": false,
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Cutting board and wooden spoon combo",
@@ -51,7 +56,8 @@
         "salePrice": 200.00,
         "image": "images/product6.jpg",
         "onSale": false,
-        "popular": true
+        "popular": true,
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Kissing Tree wall art",
@@ -60,7 +66,8 @@
         "salePrice": 320.00,
         "image": "images/product7.jpg",
         "onSale": true,
-        "popular": false
+        "popular": false,
+        "category": "Home & Decor"
     },
     {
         "name": "Tic-Tac-Toe",
@@ -69,7 +76,8 @@
         "salePrice": 100.00,
         "image": "images/product8.jpg",
         "onSale": false,
-        "popular": false
+        "popular": false,
+        "category": "Games & Puzzles"
     },
     {
         "name": "God is Good Cross",
@@ -78,7 +86,8 @@
         "salePrice": 90.00,
         "image": "images/product9.jpg",
         "onSale": true,
-        "popular": false
+        "popular": false,
+        "category": "Home & Decor"
     },
     {
         "name": "Bar-One gift box",
@@ -87,7 +96,8 @@
         "salePrice": 30.00,
         "image": "images/product10.jpg",
         "onSale": false,
-        "popular": true
+        "popular": true,
+        "category": "Gifts & Accessories"
     },
     {
         "name": "Song themed photo frame",
@@ -96,7 +106,8 @@
         "salePrice": 70.00,
         "image": "images/product11.jpg",
         "onSale": false,
-        "popular": true
+        "popular": true,
+        "category": "Home & Decor"
     },
     {
         "name": "Tree-of-life wall art",
@@ -105,7 +116,8 @@
         "salePrice": 100.00,
         "image": "images/product12.JPG",
         "onSale": false,
-        "popular": false
+        "popular": false,
+        "category": "Home & Decor"
     },
     {
         "name": "Mini tic-tac-toe gift",
@@ -114,7 +126,8 @@
         "salePrice": 60.00,
         "image": "images/product13.JPG",
         "onSale": false,
-        "popular": false
+        "popular": false,
+        "category": "Games & Puzzles"
     },
     {
         "name": "Eiffel tower 4 piece wall art",
@@ -123,7 +136,8 @@
         "salePrice": 375.00,
         "image": "images/product14.JPG",
         "onSale": true,
-        "popular": false
+        "popular": false,
+        "category": "Home & Decor"
     },
     {
         "name": "Earring stand",
@@ -132,7 +146,8 @@
         "salePrice": 100.00,
         "image": "images/product15.JPG",
         "onSale": true,
-        "popular": false
+        "popular": false,
+        "category": "Gifts & Accessories"
     },
     {
         "name": "World map 3 piece wall art",
@@ -141,7 +156,8 @@
         "salePrice": 100.00,
         "image": "images/product16.JPG",
         "onSale": false,
-        "popular": true
+        "popular": true,
+        "category": "Home & Decor"
     },
     {
         "name": "Weskus serviette holder",
@@ -150,7 +166,9 @@
         "salePrice": 100.00,
         "image": "images/product17.JPG",
         "onSale": false,
-        "popular": false
+        "popular": false,
+        "category": "Kitchen & Dining"
+        
     },
     {
         "name": "Door hanger",
@@ -159,7 +177,8 @@
         "salePrice": 70.00,
         "image": "images/product18.JPG",
         "onSale": false,
-        "popular": false
+        "popular": false,
+        "category": "Home & Decor"
     },
     {
         "name": "Book mark",
@@ -168,6 +187,7 @@
         "salePrice": 40.00,
         "image": "images/product19.JPG",
         "onSale": false,
-        "popular": false
+        "popular": false,
+        "category": "Gifts & Accessories"
     }
 ]
