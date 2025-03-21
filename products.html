@@ -7,35 +7,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
+        #products {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .products-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product img {
             width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal img {
-            max-width: 90%;
-            max-height: 90%;
-            transition: transform 0.3s ease;
-            cursor: grab;
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+            background-color: white;
         }
     </style>
 </head>
@@ -50,7 +50,6 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <section id="products">
             <h1>Our Products</h1>
@@ -68,16 +67,9 @@
             <div class="products-list" id="products-list"></div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2025 Unique Creations. All rights reserved.</p>
     </footer>
-
-    <!-- Image Modal -->
-    <div class="modal" id="imageModal">
-        <span class="close-modal" onclick="closeModal()">&times;</span>
-        <img id="modalImage" src="">
-    </div>
 
     <script>
         fetch('products.json', { cache: "no-store" })
@@ -97,7 +89,7 @@
 
                     productDiv.innerHTML = `
                         ${saleTag}
-                        <img src="${product.image}" alt="${product.name}" onclick="openModal('${product.image}')">
+                        <img src="${product.image}" alt="${product.name}">
                         <h3>${product.name}</h3>
                         <p>${product.description}</p>
                         ${priceHTML}
@@ -130,41 +122,6 @@
 
             products.forEach(product => productsList.appendChild(product));
         }
-
-        // Open Modal with zoomable image
-        function openModal(imageSrc) {
-            const modal = document.getElementById("imageModal");
-            const modalImage = document.getElementById("modalImage");
-
-            modalImage.src = imageSrc;
-            modal.style.display = "flex";
-
-            // Reset zoom on open
-            modalImage.style.transform = "scale(1)";
-        }
-
-        // Close Modal
-        function closeModal() {
-            document.getElementById("imageModal").style.display = "none";
-        }
-
-        // Zoom Functionality
-        let scale = 1;
-        const modalImage = document.getElementById("modalImage");
-
-        modalImage.addEventListener("wheel", function(event) {
-            event.preventDefault();
-            scale += event.deltaY * -0.001;
-            scale = Math.min(Math.max(1, scale), 3); // Limit zoom scale between 1x and 3x
-            modalImage.style.transform = `scale(${scale})`;
-        });
-
-        // Close Modal on "Esc" key press
-        window.addEventListener("keydown", function(event) {
-            if (event.key === "Escape") {
-                closeModal();
-            }
-        });
     </script>
 </body>
 </html>
