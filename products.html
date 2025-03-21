@@ -21,7 +21,7 @@
         }
 
         .product {
-            max-width: 100%; /* Ensures it doesn’t overflow */
+            max-width: 100%; /* Ensures it doesn't overflow */
             margin: 0 auto; /* Centers individual items */
             background-color: #fff;
             border-radius: 10px;
@@ -33,6 +33,11 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
         .product img {
             width: 100%;
             height: 200px;
@@ -40,6 +45,107 @@
             border-radius: 10px;
             background-color: white;
             cursor: pointer;
+        }
+
+        /* Modern search and filter styles */
+        .search-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        #search-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 12px 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>');
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            padding-left: 45px;
+        }
+
+        #search-input:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+        }
+
+        #sort-by, #category-filter {
+            padding: 12px 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 16px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 150px;
+            appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+            background-repeat: no-repeat;
+            background-position: calc(100% - 15px) center;
+            padding-right: 40px;
+        }
+
+        #sort-by:focus, #category-filter:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+        }
+
+        /* Category tag styles */
+        .category-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #6366f1;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(99, 102, 241, 0.3);
+            z-index: 1;
+        }
+
+        /* Sale label styling */
+        .sale-label {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ef4444;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(239, 68, 68, 0.3);
+            z-index: 1;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            margin-bottom: 0;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .sale-price {
+            color: #ef4444;
         }
     </style>
 </head>
@@ -61,17 +167,17 @@
 
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Search for products..." onkeyup="searchProducts()">
-                <select id="sort-by" onchange="sortProducts()">
-                    <option value="">Sort by Price</option>
-                    <option value="low-high">Low to High</option>
-                    <option value="high-low">High to Low</option>
-                </select>
                 <select id="category-filter" onchange="filterByCategory()">
-                    <option value="">Filter by Category</option>
+                    <option value="">All Categories</option>
                     <option value="Games & Puzzles">Games & Puzzles</option>
                     <option value="Home & Decor">Home & Decor</option>
                     <option value="Kitchen & Dining">Kitchen & Dining</option>
                     <option value="Gifts & Accessories">Gifts & Accessories</option>
+                </select>
+                <select id="sort-by" onchange="sortProducts()">
+                    <option value="">Sort by Price</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
                 </select>
             </div>
 
@@ -94,6 +200,8 @@
                     productDiv.setAttribute('data-category', product.category);
 
                     let saleTag = product.onSale ? '<div class="sale-label">Sale</div>' : '';
+                    let categoryTag = `<div class="category-tag">${product.category}</div>`;
+                    
                     let priceHTML = product.onSale 
                         ? `<p class="old-price">R${product.price.toFixed(2)}</p>
                            <p class="price sale-price">R${product.salePrice.toFixed(2)}</p>`
@@ -101,6 +209,7 @@
 
                     productDiv.innerHTML = `
                         ${saleTag}
+                        ${categoryTag}
                         <img src="${product.image}" alt="${product.name}">
                         <h3>${product.name}</h3>
                         <p>${product.description}</p>
