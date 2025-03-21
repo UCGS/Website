@@ -103,7 +103,7 @@
         "description": "Intricate designs that make a statement.",
         "price": 120.00,
         "salePrice": 100.00,
-        "image": "images/product12.jpg",
+        "image": "images/product12.JPG",
         "onSale": false,
         "popular": false
     },
@@ -112,7 +112,7 @@
         "description": "Intricate designs that make a statement.",
         "price": 75.00,
         "salePrice": 60.00,
-        "image": "images/product13.jpg",
+        "image": "images/product13.JPG",
         "onSale": false,
         "popular": false
     },
@@ -121,7 +121,7 @@
         "description": "Intricate designs that make a statement.",
         "price": 400.00,
         "salePrice": 375.00,
-        "image": "images/product14.jpg",
+        "image": "images/product14.JPG",
         "onSale": false,
         "popular": false
     },
@@ -130,7 +130,7 @@
         "description": "Intricate designs that make a statement.",
         "price": 120.00,
         "salePrice": 100.00,
-        "image": "images/product15.jpg",
+        "image": "images/product15.JPG",
         "onSale": false,
         "popular": false
     },
@@ -139,7 +139,7 @@
         "description": "Intricate designs that make a statement.",
         "price": 120.00,
         "salePrice": 100.00,
-        "image": "images/product16.jpg",
+        "image": "images/product16.JPG",
         "onSale": false,
         "popular": false
     },
@@ -148,7 +148,7 @@
         "description": "Intricate designs that make a statement.",
         "price": 130.00,
         "salePrice": 100.00,
-        "image": "images/product17.jpg",
+        "image": "images/product17.JPG",
         "onSale": false,
         "popular": false
     },
@@ -157,7 +157,7 @@
         "description": "Intricate designs that make a statement.",
         "price": 85.00,
         "salePrice": 70.00,
-        "image": "images/product18.jpg",
+        "image": "images/product18.JPG",
         "onSale": false,
         "popular": false
     },
@@ -166,7 +166,7 @@
         "description": "Intricate designs that make a statement.",
         "price": 45.00,
         "salePrice": 40.00,
-        "image": "images/product19.jpg",
+        "image": "images/product19.JPG",
         "onSale": false,
         "popular": false
     }
