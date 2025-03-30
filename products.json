@@ -4,7 +4,11 @@
         "description": "A stylish wooden box for your UNO cards.",
         "price": 115,
         "salePrice": 105.00,
-        "image": "images/product1.jpg",
+        "images": [
+            "images/product1.jpg",
+            "images/product2.jpg",
+            "images/product3.jpg"
+        ],
         "onSale": true,
         "popular": false,
         "category": "Games & Puzzles"
