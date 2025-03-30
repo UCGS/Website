@@ -17,13 +17,18 @@
 
        /* Image gallery styles */
 .image-gallery {
-    position: relative; /* Ensures the navigation buttons are positioned relative to the image container */
+    position: relative;
     margin-bottom: 15px;
     width: 100%;
-    height: auto; /* Ensure height adapts based on the image size */
+    display: inline-block; /* Added this line */
 }
 
-/* Position the navigation arrows */
+.image-gallery img {
+    width: 100%; /* added this line */
+    height: auto; /* added this line */
+    object-fit: contain; /* added this line in case images have different aspect ratios*/
+}
+
 .image-nav {
     position: absolute;
     top: 50%;
@@ -40,7 +45,7 @@
     cursor: pointer;
     font-weight: bold;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 10;  /* Ensures buttons are always above the images */
+    z-index: 10;
     transition: background-color 0.3s ease;
 }
 
