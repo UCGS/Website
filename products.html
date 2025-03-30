@@ -17,15 +17,16 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             padding: 20px;
-            place-items: center; /* Centers the product tiles */
-            max-width: 1200px; /* Prevents stretching */
-            margin: 0 auto; /* Ensures the grid stays centered */
+            place-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
         .product {
             height: 92%;
-            max-width: 300px; /* Prevents single product from stretching */
-            width: 95%; /* Ensures consistency */
-            margin: 0 auto; /* Centers individual items */
+            max-width: 300px;
+            width: 95%;
+            margin: 0 auto;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -34,13 +35,13 @@
             padding: 20px;
             position: relative;
             transition: transform 0.3s, box-shadow 0.3s;
-            display: flex;        
-            flex-direction: column; 
+            display: flex;
+            flex-direction: column;
         }
 
         .product img {
             width: 100%;
-            border-radius: 10px; /* Makes the image corners rounded */
+            border-radius: 10px;
             height: 200px;
             object-fit: contain;
             border-radius: 20px;
@@ -48,66 +49,41 @@
             cursor: pointer;
         }
 
-        .product img:not(:first-child) {
-            margin-top: 10px;
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
         }
 
-        /* Modern search and filter styles */
-        .search-container {
+        .carousel-container img {
+            width: 100%;
+            display: block;
+            transition: opacity 0.5s ease;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
             display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin: 30px auto;
-            max-width: 800px;
-            padding: 0 20px;
+            justify-content: space-between;
+            transform: translateY(-50%);
         }
 
-        #search-input {
-            flex: 1;
-            min-width: 250px;
-            padding: 12px 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 50px;
-            font-size: 16px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>');
-            background-repeat: no-repeat;
-            background-position: 15px center;
-            padding-left: 45px;
-        }
-
-        #search-input:focus {
-            outline: none;
-            border-color: #6366f1;
-            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
-        }
-
-        #sort-by, #category-filter {
-            padding: 12px 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 50px;
-            font-size: 16px;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        .carousel-controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
             cursor: pointer;
-            transition: all 0.3s;
-            min-width: 100px;
-            appearance: none;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
-            background-repeat: no-repeat;
-            background-position: calc(100% - 15px) center;
-            padding-right: 40px;
         }
 
-        #sort-by:focus, #category-filter:focus {
-            outline: none;
-            border-color: #6366f1;
-            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+        .carousel-controls button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
-        /* Category text style */
         .product-category {
             font-size: 14px;
             color: #6366f1;
@@ -189,15 +165,23 @@
                            <p class="price sale-price">R${product.salePrice.toFixed(2)}</p>` 
                         : `<p class="price">R${product.price.toFixed(2)}</p>`;
 
-                    // Display multiple images
+                    // Handle multiple images
                     let imagesHTML = '';
                     if (product.images && Array.isArray(product.images)) {
-                        imagesHTML = product.images.map(image => `<img src="${image}" alt="${product.name}">`).join('');
+                        imagesHTML = product.images.map((image, index) => `
+                            <img src="${image}" alt="${product.name}" class="product-image" style="opacity: ${index === 0 ? 1 : 0}">
+                        `).join('');
                     }
 
                     productDiv.innerHTML = `
                         ${saleTag}
-                        ${imagesHTML}
+                        <div class="carousel-container">
+                            ${imagesHTML}
+                            <div class="carousel-controls">
+                                <button class="prev" onclick="changeImage(event, '${product.name}', -1)">&#10094;</button>
+                                <button class="next" onclick="changeImage(event, '${product.name}', 1)">&#10095;</button>
+                            </div>
+                        </div>
                         <h3>${product.name}</h3>
                         <p class="product-category">${product.category}</p>
                         <p>${product.description}</p>
@@ -212,6 +196,18 @@
                 });
             })
             .catch(error => console.error('Error loading products:', error));
+
+        function changeImage(event, productName, direction) {
+            const productDiv = event.target.closest('.product');
+            const images = Array.from(productDiv.querySelectorAll('.product-image'));
+            let currentIndex = images.findIndex(image => image.style.opacity == 1);
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+
+            // Fade effect
+            images.forEach((img, idx) => {
+                img.style.opacity = idx === currentIndex ? 1 : 0;
+            });
+        }
 
         function searchProducts() {
             const input = document.getElementById('search-input').value.toLowerCase();
