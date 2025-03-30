@@ -58,6 +58,8 @@ header img {
 }
 
 nav ul {
+    flex-direction: column; /* add this line */
+    align-items: center; /* add this line */
     list-style: none;
     display: flex;
     gap: 30px;
