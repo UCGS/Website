@@ -1,3 +1,4 @@
+
 footer a {
     color: #fff;
     text-decoration: none;
@@ -288,22 +289,9 @@ footer p {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-     header {
-        flex-direction: column;
-        align-items: center;  /* Centers the logo and nav on mobile */
-        padding: 10px;
-    }
-    
-    header img {
-        margin-bottom: 10px;  /* Space between logo and nav */
-    }
-
     nav ul {
         gap: 15px;
-        justify-content: center;  /* Center the nav items */
     }
-}
-}
     
     #home h1 {
         font-size: 2.2em;
@@ -325,18 +313,13 @@ footer p {
 @media (max-width: 480px) {
     header {
         flex-direction: column;
-        align-items: center;
         padding: 10px;
     }
-
+    
     header img {
         margin-bottom: 10px;
     }
-
-    nav ul {
-        gap: 10px;
-        justify-content: center;
-    }
+    
     main {
         padding-top: 120px;
     }
