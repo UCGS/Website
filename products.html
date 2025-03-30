@@ -48,6 +48,10 @@
             cursor: pointer;
         }
 
+        .product img:not(:first-child) {
+            margin-top: 10px;
+        }
+
         /* Modern search and filter styles */
         .search-container {
             display: flex;
@@ -182,12 +186,18 @@
                     
                     let priceHTML = product.onSale 
                         ? `<p class="old-price">R${product.price.toFixed(2)}</p>
-                           <p class="price sale-price">R${product.salePrice.toFixed(2)}</p>`
+                           <p class="price sale-price">R${product.salePrice.toFixed(2)}</p>` 
                         : `<p class="price">R${product.price.toFixed(2)}</p>`;
+
+                    // Display multiple images
+                    let imagesHTML = '';
+                    if (product.images && Array.isArray(product.images)) {
+                        imagesHTML = product.images.map(image => `<img src="${image}" alt="${product.name}">`).join('');
+                    }
 
                     productDiv.innerHTML = `
                         ${saleTag}
-                        <img src="${product.image}" alt="${product.name}">
+                        ${imagesHTML}
                         <h3>${product.name}</h3>
                         <p class="product-category">${product.category}</p>
                         <p>${product.description}</p>
