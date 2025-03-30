@@ -58,6 +58,7 @@ header img {
 }
 
 nav ul {
+    align-items: center;
     list-style: none;
     display: flex;
     gap: 30px;
