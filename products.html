@@ -48,6 +48,105 @@
             cursor: pointer;
         }
 
+        /* Image gallery container */
+        .image-gallery {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        /* Image navigation buttons */
+        .image-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #333;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            transition: background-color 0.3s;
+        }
+
+        .image-nav:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .prev-image {
+            left: 10px;
+        }
+
+        .next-image {
+            right: 10px;
+        }
+
+        /* Hide navigation buttons when only one image */
+        .single-image .image-nav {
+            display: none;
+        }
+
+        /* Modern search and filter styles */
+        .search-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        #search-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 12px 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>');
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            padding-left: 45px;
+        }
+
+        #search-input:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+        }
+
+        #sort-by, #category-filter {
+            padding: 12px 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 16px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 100px;
+            appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+            background-repeat: no-repeat;
+            background-position: calc(100% - 15px) center;
+            padding-right: 40px;
+        }
+
+        #sort-by:focus, #category-filter:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+        }
+
         /* Category text style */
         .product-category {
             font-size: 14px;
