@@ -5,7 +5,7 @@
         "price": 115,
         "salePrice": 105.00,
         "images": [
-            "images/Uno.jpg",
+            "images/Uno.jpg","images/Uno.jpg"
         ],
         "onSale": true,
         "popular": false,
