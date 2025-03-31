@@ -193,7 +193,7 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Birthday Calendar ",
+        "name": "Birthday Calendar",
         "description": "A beautifully laser cut birthday calendar to keep track of all your loved ones birthdays. 500 * 320",
         "price": 295.00,
         "salePrice": 295.00,
@@ -250,7 +250,7 @@
         "price": 180.00,
         "salePrice": 180.00,
         "images": [
-            "images/OurFatherL.JPG","images/OurFatherL1.JPG","images/OurFatherL2.JPG","images/OurFatherL3.JPG","images/OurFatherL4.JPG", ,"images/OurFatherL5.JPG"
+            "images/OurFatherL.JPG","images/OurFatherL1.JPG","images/OurFatherL2.JPG","images/OurFatherL3.JPG","images/OurFatherL4.JPG","images/OurFatherL5.JPG"
         ],
         "onSale": false,
         "popular": false,
