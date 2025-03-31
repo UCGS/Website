@@ -146,7 +146,7 @@
         "description": "A stylish wooden stand for earrings. 300 by 240",
         "price": 120.00,
         "salePrice": 105.00,
-        "image": "images/EarringStandL.JPG",
+        "image": "images/EarringL.JPG",
         "onSale": true,
         "popular": false,
         "category": "Gifts & Accessories"
@@ -470,7 +470,7 @@
         "price": 90.00,
         "salePrice": 90.00,
         "image": [
-            "images/Coasters1.JPG","images/Coasters2.JPG","images/Coasters3.JPG","images/Coasters4.JPG","images/Coasters5.JPG", "images/Coasters6.JPG"
+            "images/Coasters1.JPG","images/Coasters2.JPG","images/Coasters3.JPG","images/Coasters4.JPG","images/Coasters5.JPG", "images/Coasters6.JPG", "images/Coasters7.JPG"
         ],
         "onSale": false,
         "popular": false,
