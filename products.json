@@ -4,9 +4,7 @@
         "description": "A stylish wooden box for your UNO cards.",
         "price": 115,
         "salePrice": 105.00,
-        "images": [
-            "images/Uno.jpg","images/Uno.jpg"
-        ],
+        "image": "images/Uno.jpg",
         "onSale": true,
         "popular": false,
         "category": "Games & Puzzles"
@@ -126,7 +124,7 @@
         "description": "A compact Tic-Tac-Toe set for fun on the go.",
         "price": 55.00,
         "salePrice": 40.00,
-        "image": "images/TTT2.JPG",
+        "images": [ "images/TTT2.JPG", "images/TTT2_2" ],
         "onSale": false,
         "popular": false,
         "category": "Games & Puzzles"
@@ -206,17 +204,17 @@
     },
     {
         "name": "Braai rules",
-        "description": "A beautifully crafted wooden bookmark. 190 by 400",
+        "description": "Laser-cut wooden sign with classic braai rules. 190mm x 400mm.",
         "price": 150.00,
         "salePrice": 150.00,
         "image": "images/BraaiRules.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
-        "name": "Grill Cleaner",
-        "description": "A beautifully crafted wooden bookmark.",
+        "name": "Grill Cleaning brush",
+        "description": "Durable wooden grill brush for easy Braai maintenance.",
         "price": 85.00,
         "salePrice": 85.00,
         "image": "images/GrillCleaner.JPG",
@@ -226,7 +224,7 @@
     },
     {
         "name": "Fridge magnet Match Box holder",
-        "description": "A beautifully crafted wooden bookmark.",
+        "description": "Convenient wooden matchbox holder with a magnetic back.",
         "price": 45.00,
         "salePrice": 45.00,
         "image": "images/MatchBox.JPG",
@@ -236,7 +234,7 @@
     },
     {
         "name": "Bald man's comb",
-        "description": "A beautifully crafted wooden bookmark.",
+        "description": "A humorous wooden comb with no teeth – perfect gag gift!",
         "price": 40.00,
         "salePrice": 40.00,
         "image": "images/Comb.JPG",
@@ -246,7 +244,7 @@
     },
     {
         "name": "Our Father cross - large",
-        "description": "A beautifully crafted wooden bookmark. 450 by 310",
+        "description": "Beautifully crafted wooden cross with prayer engraving. 450mm x 310mm.",
         "price": 180.00,
         "salePrice": 180.00,
         "images": [
@@ -254,11 +252,11 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Our Father wall cross - medium",
-        "description": "A beautifully crafted wooden bookmark. 240 by 170",
+        "description": "Inspirational wooden cross with engraved prayer. 240mm x 170mm.",
         "price": 75.00,
         "salePrice": 75.00,
         "image": "images/OurFatherM.JPG",
@@ -268,7 +266,7 @@
     },
     {
         "name": "Our Father cross - small",
-        "description": "A beautifully crafted wooden bookmark. 125 by 90",
+        "description": "Compact wooden cross with an engraved prayer. 125mm x 90mm.",
         "price": 55.00,
         "salePrice": 55.00,
         "image": "images/OurFatherS.JPG",
@@ -277,8 +275,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "picnictable condiment holder",
-        "description": "A beautifully crafted wooden bookmark.",
+        "name": "Picnic table condiment holder",
+        "description": "Rustic wooden holder for condiments, shaped like a picnic table.",
         "price": 150.00,
         "salePrice": 150.00,
         "image": "images/Condiment.JPG",
@@ -288,7 +286,7 @@
     },
     {
         "name": "Earring stand - small",
-        "description": "A beautifully crafted wooden bookmark. 200 by 160",
+        "description": "Elegant wooden stand for organizing earrings. 200mm x 160mm.",
         "price": 85.00,
         "salePrice": 85.00,
         "image": "images/EarringS.JPG",
@@ -297,8 +295,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Toothpicks holder (inlcuding toothpicks)",
-        "description": "A beautifully crafted wooden bookmark.",
+        "name": "Toothpick holder (including toothpicks)",
+        "description": "Compact laser-cut wooden holder for toothpicks.",
         "price": 55.00,
         "salePrice": 55.00,
         "image": "images/Toothpicks.JPG",
@@ -307,8 +305,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Sweetner holder",
-        "description": "A beautifully crafted wooden bookmark.",
+        "name": "Sweetener Holder",
+        "description": "Elegant wooden holder for sweetener packets, perfect for coffee stations and dining tables.",
         "price": 45.00,
         "salePrice": 45.00,
         "image": "images/Sweetner.JPG",
@@ -317,8 +315,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Angel Candle holder",
-        "description": "A beautifully crafted wooden bookmark. 210mm tall",
+        "name": "Angel Candle Holder",
+        "description": "Beautifully crafted 210mm tall angel-shaped candle holder, perfect for serene ambiance.",
         "price": 95.00,
         "salePrice": 95.00,
         "image": "images/Angel.JPG",
@@ -327,8 +325,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Windmill decor",
-        "description": "A beautifully crafted wooden bookmark. 250mm tall",
+        "name": "Windmill Decor",
+        "description": "Charming 250mm tall wooden windmill decor, adding a rustic touch to any space.",
         "price": 50.00,
         "salePrice": 50.00,
         "image": "images/WindMill.JPG",
@@ -337,8 +335,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Tree of life - Style 2",
-        "description": "A beautifully crafted wooden bookmark. 290 Diameter",
+        "name": "Tree of Life - Style 2",
+        "description": "Intricate 290mm diameter wooden Tree of Life wall decor, symbolizing growth and strength.",
         "price": 150.00,
         "salePrice": 150.00,
         "image": "images/Tree2.JPG",
@@ -347,8 +345,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Tree of life - Style 3",
-        "description": "A beautifully crafted wooden bookmark. 290 diameter",
+        "name": "Tree of Life - Style 3",
+        "description": "Elegant 290mm diameter Tree of Life design, perfect for wall decoration.",
         "price": 150.00,
         "salePrice": 150.00,
         "image": "images/Tree3.JPG",
@@ -358,7 +356,7 @@
     },
     {
         "name": "15cm Ruler",
-        "description": "A beautifully crafted wooden bookmark.",
+        "description": "Handcrafted wooden 15cm ruler, ideal for precise measurements with a rustic charm.",
         "price": 25.00,
         "salePrice": 25.00,
         "image": "images/Ruler15.JPG",
@@ -367,8 +365,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Father's gift box",
-        "description": "A beautifully crafted wooden bookmark. 115 by 65 by 35",
+        "name": "Father's Gift Box",
+        "description": "Thoughtful wooden gift box (115mm x 65mm x 35mm), perfect for Father's Day or special occasions.",
         "price": 50.00,
         "salePrice": 50.00,
         "images": [
@@ -379,8 +377,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Cutting board gift combo",
-        "description": "A beautifully crafted wooden bookmark.",
+        "name": "Cutting Board Gift Combo",
+        "description": "Premium wooden cutting board set, ideal for kitchen use or gifting.",
         "price": 220.00,
         "salePrice": 220.00,
         "images": [
@@ -391,8 +389,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Cutting board braai combo",
-        "description": "A beautifully crafted wooden bookmark.",
+        "name": "Cutting Board Braai Combo",
+        "description": "Perfect wooden cutting board set for BBQ and braai lovers.",
         "price": 220.00,
         "salePrice": 220.00,
         "image": "images/CuttingCombo3.JPG",
@@ -402,7 +400,7 @@
     },
     {
         "name": "Pocket Prayers",
-        "description": "A beautifully crafted wooden bookmark.",
+        "description": "Compact and meaningful wooden pocket prayers, perfect for daily inspiration.",
         "price": 30.00,
         "salePrice": 30.00,
         "images": [
@@ -413,8 +411,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Spinning Calendar",
-        "description": "A beautifully crafted wooden bookmark.",
+        "name": "Calendar",
+        "description": "Stylish wooden calendar, a timeless addition to your workspace or home.",
         "price": 210.00,
         "salePrice": 210.00,
         "image": "images/Calendar.JPG",
@@ -423,8 +421,8 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Miniture VolksWagon model",
-        "description": "A beautifully crafted wooden bookmark. 125mm ",
+        "name": "Miniature Volkswagen Model",
+        "description": "Detailed 125mm wooden Volkswagen model, perfect for collectors and car enthusiasts.",
         "price": 115.00,
         "salePrice": 115.00,
         "images": [
@@ -436,7 +434,7 @@
     },
     {
         "name": "Notebook with magnet",
-        "description": "A beautifully crafted wooden bookmark. 200 by 100",
+        "description": "A stylish and functional wooden notebook with a magnetic closure, measuring 200 by 100mm.",
         "price": 60.00,
         "salePrice": 60.00,
         "image": "images/NoteMagnet.JPG",
@@ -446,7 +444,7 @@
     },
     {
         "name": "Eiffel Tower - 3D",
-        "description": "A beautifully crafted wooden bookmark. 600mm tall",
+        "description": "A stunning 600mm tall 3D wooden model of the Eiffel Tower, perfect for home or office decor.",
         "price": 450.00,
         "salePrice": 450.00,
         "image": "images/Eiffel3D.JPG",
@@ -456,7 +454,7 @@
     },
     {
         "name": "Bathroom door signs",
-        "description": "A beautifully crafted wooden bookmark.",
+        "description": "Elegant and minimalist wooden door signs for bathrooms, adding a decorative touch to your space.",
         "price": 50.00,
         "salePrice": 50.00,
         "image": "images/Bathroom.JPG",
@@ -466,11 +464,11 @@
     },
     {
         "name": "Coasters 6pc",
-        "description": "A beautifully crafted wooden bookmark.",
+        "description": "A set of six stylish and durable wooden coasters, designed to protect your surfaces while adding charm.",
         "price": 90.00,
         "salePrice": 90.00,
         "images": [
-            "images/Coasters1.JPG","images/Coasters2.JPG","images/Coasters3.JPG","images/Coasters4.JPG","images/Coasters5.JPG", "images/Coasters6.JPG", "images/Coasters7.JPG"
+            "images/Coasters1.JPG", "images/Coasters2.JPG", "images/Coasters3.JPG", "images/Coasters4.JPG", "images/Coasters5.JPG", "images/Coasters6.JPG", "images/Coasters7.JPG"
         ],
         "onSale": false,
         "popular": false,
@@ -478,7 +476,7 @@
     },
     {
         "name": "Footfile",
-        "description": "A beautifully crafted wooden bookmark.",
+        "description": "A handy wooden foot file designed to keep your feet smooth and well-groomed.",
         "price": 50.00,
         "salePrice": 50.00,
         "image": "images/Footfile.JPG",
@@ -488,7 +486,7 @@
     },
     {
         "name": "Mouse trap welcome board",
-        "description": "A beautifully crafted wooden bookmark. 200 by 170",
+        "description": "A unique and humorous wooden welcome board featuring a mouse trap design, measuring 200 by 170mm.",
         "price": 140.00,
         "salePrice": 140.00,
         "image": "images/MouseTrap.JPG",
@@ -498,12 +496,158 @@
     },
     {
         "name": "Perfect Weekend braai board",
-        "description": "A beautifully crafted wooden bookmark. 200 by 140",
+        "description": "A 200 by 140 board, perfect for a braai area.",
         "price": 140.00,
         "salePrice": 140.00,
         "images": [
             "images/PerfectWeekend.JPG","images/PerfectWeekend1.JPG"
         ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Africa Key hanger",
+        "description": "A stylish key hanger shaped like Africa.",
+        "price": 140.00,
+        "salePrice": 140.00,
+        "image": "images/AfricaKC.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Easter Bunnies decor",
+        "description": "Easter-themed decorative bunnies.",
+        "price": 140.00,
+        "salePrice": 140.00,
+        "image": "images/Easterbunnies.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Easter egg box",
+        "description": "A small decorative box for Easter eggs.",
+        "price": 25.00,
+        "salePrice": 25.00,
+        "image": "images/Easteregg.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Mysterious Face Wall Art",
+        "description": "A striking abstract face design wall art.",
+        "price": 350.00,
+        "salePrice": 350.00,
+        "image": "images/Face.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Family Wall Art",
+        "description": "A heartwarming wall art piece representing family.",
+        "price": 70.00,
+        "salePrice": 70.00,
+        "image": "images/FamilyArt.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Home Sweet home Key hanger",
+        "description": "A key hanger with the inscription 'Home Sweet Home'.",
+        "price": 120.00,
+        "salePrice": 120.00,
+        "image": "images/HSHKC.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Key chains",
+        "description": "Small and stylish key chains.",
+        "price": 45.00,
+        "salePrice": 40.00,
+        "image": "images/Keychains.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Love Hanging Wall Art",
+        "description": "A beautiful wall art piece with 'Love' written on it.",
+        "price": 140.00,
+        "salePrice": 140.00,
+        "image": "images/LoveHang.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Love Wall Art",
+        "description": "A romantic wall art featuring the word 'Love'.",
+        "price": 110.00,
+        "salePrice": 110.00,
+        "image": "images/LoveWall.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Surfboard Wall Art",
+        "description": "A surfboard-themed wall art for beach lovers.",
+        "price": 200.00,
+        "salePrice": 200.00,
+        "images": [
+            "images/Surfboard1.JPG","images/Surfboard2.JPG","images/Surfboard4.JPG","images/Surfboard4.JPG"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Tall Easter Bunny Decor",
+        "description": "A tall, cute Easter bunny figurine.",
+        "price": 200.00,
+        "salePrice": 200.00,
+        "images": [
+            "images/TallBunny.JPG","images/TallBunny2.JPG"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Welcome Wall art",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 110.00,
+        "salePrice": 110.00,
+        "image": "images/Welcome.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Welcome Wall art",
+        "description": "A round welcome sign featuring a windmill design.",
+        "price": 110.00,
+        "salePrice": 110.00,
+        "images": [
+            "images/Windmillround1.JPG","images/Windmillround2.JPG"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Wolf Wall Art",
+        "description": "A majestic wolf-themed wall art.",
+        "price": 290.00,
+        "salePrice": 290.00,
+        "image": "images/WolfArt.JPG",
         "onSale": false,
         "popular": false,
         "category": "Gifts & Accessories"
