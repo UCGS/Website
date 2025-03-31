@@ -143,7 +143,7 @@
     },
     {
         "name": "Earring stand - Large",
-        "description": "A stylish wooden stand for earrings.",
+        "description": "A stylish wooden stand for earrings. 300 by 240",
         "price": 120.00,
         "salePrice": 105.00,
         "image": "images/EarringStandL.JPG",
@@ -188,6 +188,322 @@
         "price": 35.00,
         "salePrice": 30.00,
         "image": "images/BookMark.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Birthday Calendar ",
+        "description": "A beautifully laser cut birthday calendar to keep track of all your loved ones birthdays. 500 * 320",
+        "price": 295.00,
+        "salePrice": 295.00,
+        "image": [
+            "images/Birthday.jpg","images/Birthday1.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Braai rules",
+        "description": "A beautifully crafted wooden bookmark. 190 by 400",
+        "price": 150.00,
+        "salePrice": 150.00,
+        "image": "images/BraaiRules.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Grill Cleaner",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 85.00,
+        "salePrice": 85.00,
+        "image": "images/GrillCleaner.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Fridge magnet Match Box holder",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 45.00,
+        "salePrice": 45.00,
+        "image": "images/MatchBox.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Bald man's comb",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 40.00,
+        "salePrice": 40.00,
+        "image": "images/Comb.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Our Father cross - large",
+        "description": "A beautifully crafted wooden bookmark. 450 by 310",
+        "price": 180.00,
+        "salePrice": 180.00,
+        "image": [
+            "images/OurFatherL.jpg","images/OurFatherL1.jpg","images/OurFatherL2.jpg","images/OurFatherL3.jpg","images/OurFatherL4.jpg", ,"images/OurFatherL5.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Our Father wall cross - medium",
+        "description": "A beautifully crafted wooden bookmark. 240 by 170",
+        "price": 75.00,
+        "salePrice": 75.00,
+        "image": "images/OurFatherM.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Our Father cross - small",
+        "description": "A beautifully crafted wooden bookmark. 125 by 90",
+        "price": 55.00,
+        "salePrice": 55.00,
+        "image": "images/OurFatherS.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "picnictable condiment holder",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 150.00,
+        "salePrice": 150.00,
+        "image": "images/Condiment.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Earring stand - small",
+        "description": "A beautifully crafted wooden bookmark. 200 by 160",
+        "price": 85.00,
+        "salePrice": 85.00,
+        "image": "images/EarringS.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Toothpicks holder (inlcuding toothpicks)",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 55.00,
+        "salePrice": 55.00,
+        "image": "images/Toothpicks.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Sweetner holder",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 45.00,
+        "salePrice": 45.00,
+        "image": "images/Sweetner.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Angel Candle holder",
+        "description": "A beautifully crafted wooden bookmark. 210mm tall",
+        "price": 95.00,
+        "salePrice": 95.00,
+        "image": "images/Angel.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Windmill decor",
+        "description": "A beautifully crafted wooden bookmark. 250mm tall",
+        "price": 50.00,
+        "salePrice": 50.00,
+        "image": "images/WindMill.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Tree of life - Style 2",
+        "description": "A beautifully crafted wooden bookmark. 290 Diameter",
+        "price": 150.00,
+        "salePrice": 150.00,
+        "image": "images/Tree2.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Tree of life - Style 3",
+        "description": "A beautifully crafted wooden bookmark. 290 diameter",
+        "price": 150.00,
+        "salePrice": 150.00,
+        "image": "images/Tree3.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "15cm Ruler",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 25.00,
+        "salePrice": 25.00,
+        "image": "images/15cm.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Father's gift box",
+        "description": "A beautifully crafted wooden bookmark. 115 by 65 by 35",
+        "price": 50.00,
+        "salePrice": 50.00,
+        "image": [
+            "images/Fatherbox1.jpg","images/Fatherbox2.jpg","images/Fatherbox3.jpg","images/Fatherbox4.jpg","images/Fatherbox5.jpg", "images/Fatherbox6.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Cutting board gift combo",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 220.00,
+        "salePrice": 220.00,
+        "image": [
+            "images/CuttingCombo2.jpg","images/CuttingCombo2_1.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Cutting board braai combo",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 220.00,
+        "salePrice": 220.00,
+        "image": "images/CuttingCombo3.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Pocket Prayers",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 30.00,
+        "salePrice": 30.00,
+        "image": [
+            "images/PocketPrayer1.jpg","images/PocketPrayer2.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Spinning Calendar",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 210.00,
+        "salePrice": 210.00,
+        "image": "images/Calendar.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Miniture VolksWagon model",
+        "description": "A beautifully crafted wooden bookmark. 125mm ",
+        "price": 115.00,
+        "salePrice": 115.00,
+        "image": [
+            "images/VW1.jpg","images/VW2.jpg","images/VW3.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Notebook with magnet",
+        "description": "A beautifully crafted wooden bookmark. 200 by 100",
+        "price": 60.00,
+        "salePrice": 60.00,
+        "image": "images/NoteMagnet.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Eiffel Tower - 3D",
+        "description": "A beautifully crafted wooden bookmark. 600mm tall",
+        "price": 450.00,
+        "salePrice": 450.00,
+        "image": "images/Eiffel3D.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Bathroom door signs",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 50.00,
+        "salePrice": 50.00,
+        "image": "images/Bathroom.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Coasters 6pc",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 90.00,
+        "salePrice": 90.00,
+        "image": [
+            "images/Coasters1.jpg","images/Coasters2.jpg","images/Coasters3.jpg","images/Coasters4.jpg","images/Coasters5.jpg", "images/Coasters6.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Footfile",
+        "description": "A beautifully crafted wooden bookmark.",
+        "price": 50.00,
+        "salePrice": 50.00,
+        "image": "images/Footfile.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Mouse trap welcome board",
+        "description": "A beautifully crafted wooden bookmark. 200 by 170",
+        "price": 140.00,
+        "salePrice": 140.00,
+        "image": "images/MouseTrap.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Perfect Weekend braai board",
+        "description": "A beautifully crafted wooden bookmark. 200 by 140",
+        "price": 140.00,
+        "salePrice": 140.00,
+        "image": [
+            "images/PerfectWeekend.jpg","images/PerfectWeekend1.jpg"
+        ],
         "onSale": false,
         "popular": false,
         "category": "Gifts & Accessories"
