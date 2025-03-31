@@ -197,7 +197,7 @@
         "description": "A beautifully laser cut birthday calendar to keep track of all your loved ones birthdays. 500 * 320",
         "price": 295.00,
         "salePrice": 295.00,
-        "image": [
+        "images": [
             "images/Birthday.JPG","images/Birthday1.JPG"
         ],
         "onSale": false,
@@ -249,7 +249,7 @@
         "description": "A beautifully crafted wooden bookmark. 450 by 310",
         "price": 180.00,
         "salePrice": 180.00,
-        "image": [
+        "images": [
             "images/OurFatherL.JPG","images/OurFatherL1.JPG","images/OurFatherL2.JPG","images/OurFatherL3.JPG","images/OurFatherL4.JPG", ,"images/OurFatherL5.JPG"
         ],
         "onSale": false,
@@ -371,7 +371,7 @@
         "description": "A beautifully crafted wooden bookmark. 115 by 65 by 35",
         "price": 50.00,
         "salePrice": 50.00,
-        "image": [
+        "images": [
             "images/Fatherbox1.JPG","images/Fatherbox2.JPG","images/Fatherbox3.JPG","images/Fatherbox4.JPG","images/Fatherbox5.JPG", "images/Fatherbox6.JPG"
         ],
         "onSale": false,
@@ -383,7 +383,7 @@
         "description": "A beautifully crafted wooden bookmark.",
         "price": 220.00,
         "salePrice": 220.00,
-        "image": [
+        "images": [
             "images/CuttingCombo2.JPG","images/CuttingCombo2_1.JPG"
         ],
         "onSale": false,
@@ -405,7 +405,7 @@
         "description": "A beautifully crafted wooden bookmark.",
         "price": 30.00,
         "salePrice": 30.00,
-        "image": [
+        "images": [
             "images/PocketPrayer1.JPG","images/PocketPrayer2.JPG"
         ],
         "onSale": false,
@@ -427,7 +427,7 @@
         "description": "A beautifully crafted wooden bookmark. 125mm ",
         "price": 115.00,
         "salePrice": 115.00,
-        "image": [
+        "images": [
             "images/VW1.JPG","images/VW2.JPG","images/VW3.JPG"
         ],
         "onSale": false,
@@ -469,7 +469,7 @@
         "description": "A beautifully crafted wooden bookmark.",
         "price": 90.00,
         "salePrice": 90.00,
-        "image": [
+        "images": [
             "images/Coasters1.JPG","images/Coasters2.JPG","images/Coasters3.JPG","images/Coasters4.JPG","images/Coasters5.JPG", "images/Coasters6.JPG", "images/Coasters7.JPG"
         ],
         "onSale": false,
@@ -501,7 +501,7 @@
         "description": "A beautifully crafted wooden bookmark. 200 by 140",
         "price": 140.00,
         "salePrice": 140.00,
-        "image": [
+        "images": [
             "images/PerfectWeekend.JPG","images/PerfectWeekend1.JPG"
         ],
         "onSale": false,
