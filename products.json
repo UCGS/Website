@@ -5,9 +5,7 @@
         "price": 115,
         "salePrice": 105.00,
         "images": [
-            "images/product1.jpg",
-            "images/product2.jpg",
-            "images/product3.jpg"
+            "images/Uno.jpg",
         ],
         "onSale": true,
         "popular": false,
@@ -18,7 +16,7 @@
         "description": "Fun and nostalgic wooden rubber band gun.",
         "price": 100.00,
         "salePrice": 90.00,
-        "image": "images/product2.jpg",
+        "image": "images/Gun.jpg",
         "onSale": false,
         "popular": true,
         "category": "Games & Puzzles"
@@ -28,7 +26,7 @@
         "description": "Elegant storage for your favorite card games.",
         "price": 100,
         "salePrice": 85.00,
-        "image": "images/product3.jpg",
+        "image": "images/CardBox.jpg",
         "onSale": true,
         "popular": false,
         "category": "Games & Puzzles"
@@ -38,7 +36,7 @@
         "description": "The perfect wooden gift box for braai lovers. Includes firlighters and lighter.",
         "price": 140.00,
         "salePrice": 140.00,
-        "image": "images/product4.jpg",
+        "image": "images/BraaiBox.jpg",
         "onSale": false,
         "popular": true,
         "category": "Gifts & Accessories"
@@ -48,7 +46,7 @@
         "description": "A sleek holder for wine and glasses.",
         "price": 50.00,
         "salePrice": 45.00,
-        "image": "images/product5.jpg",
+        "image": "images/Butler.jpg",
         "onSale": false,
         "popular": false,
         "category": "Kitchen & Dining"
@@ -58,7 +56,7 @@
         "description": "A practical and stylish kitchen set.",
         "price": 220.00,
         "salePrice": 200.00,
-        "image": "images/product6.jpg",
+        "image": "images/CuttingSpoon.jpg",
         "onSale": false,
         "popular": true,
         "category": "Kitchen & Dining"
@@ -68,7 +66,7 @@
         "description": "A romantic wooden wall art piece.",
         "price": 350.00,
         "salePrice": 320.00,
-        "image": "images/product7.jpg",
+        "image": "images/KissTree.jpg",
         "onSale": true,
         "popular": false,
         "category": "Home & Decor"
@@ -78,7 +76,7 @@
         "description": "A classic wooden Tic-Tac-Toe game.",
         "price": 120.00,
         "salePrice": 100.00,
-        "image": "images/product8.jpg",
+        "image": "images/TTT1.jpg",
         "onSale": false,
         "popular": false,
         "category": "Games & Puzzles"
@@ -88,7 +86,7 @@
         "description": "A beautifully crafted wooden cross.",
         "price": 120.00,
         "salePrice": 90.00,
-        "image": "images/product9.jpg",
+        "image": "images/GodisGood.jpg",
         "onSale": true,
         "popular": false,
         "category": "Home & Decor"
@@ -98,7 +96,7 @@
         "description": "A charming gift box for Bar-One lovers.",
         "price": 45.00,
         "salePrice": 30.00,
-        "image": "images/product10.jpg",
+        "image": "images/BarOne.jpg",
         "onSale": false,
         "popular": true,
         "category": "Gifts & Accessories"
@@ -108,7 +106,7 @@
         "description": "A personalized frame inspired by music.",
         "price": 110.00,
         "salePrice": 70.00,
-        "image": "images/product11.jpg",
+        "image": "images/SongPhoto.jpg",
         "onSale": false,
         "popular": true,
         "category": "Home & Decor"
@@ -118,7 +116,7 @@
         "description": "A stunning Tree-of-Life wooden design.",
         "price": 150.00,
         "salePrice": 100.00,
-        "image": "images/product12.JPG",
+        "image": "images/RoundTree.JPG",
         "onSale": false,
         "popular": false,
         "category": "Home & Decor"
@@ -128,7 +126,7 @@
         "description": "A compact Tic-Tac-Toe set for fun on the go.",
         "price": 55.00,
         "salePrice": 40.00,
-        "image": "images/product13.JPG",
+        "image": "images/TTT2.JPG",
         "onSale": false,
         "popular": false,
         "category": "Games & Puzzles"
@@ -138,7 +136,7 @@
         "description": "A striking four-piece Eiffel Tower artwork.",
         "price": 500.00,
         "salePrice": 480.00,
-        "image": "images/product14.JPG",
+        "image": "images/TowerWall.JPG",
         "onSale": true,
         "popular": false,
         "category": "Home & Decor"
@@ -148,7 +146,7 @@
         "description": "A stylish wooden stand for earrings.",
         "price": 120.00,
         "salePrice": 105.00,
-        "image": "images/product15.JPG",
+        "image": "images/EarringStandL.JPG",
         "onSale": true,
         "popular": false,
         "category": "Gifts & Accessories"
@@ -158,7 +156,7 @@
         "description": "A detailed wooden world map in three pieces.",
         "price": 350.00,
         "salePrice": 350.00,
-        "image": "images/product16.JPG",
+        "image": "images/WorldMap.JPG",
         "onSale": false,
         "popular": true,
         "category": "Home & Decor"
@@ -168,7 +166,7 @@
         "description": "A unique serviette holder inspired by Weskus.",
         "price": 110.00,
         "salePrice": 100.00,
-        "image": "images/product17.JPG",
+        "image": "images/Serviette.JPG",
         "onSale": false,
         "popular": false,
         "category": "Kitchen & Dining"
@@ -179,7 +177,7 @@
         "description": "A custom wooden door hanger.",
         "price": 45.00,
         "salePrice": 40.00,
-        "image": "images/product18.JPG",
+        "image": "images/DoorHang.JPG",
         "onSale": false,
         "popular": false,
         "category": "Home & Decor"
@@ -189,7 +187,7 @@
         "description": "A beautifully crafted wooden bookmark.",
         "price": 35.00,
         "salePrice": 30.00,
-        "image": "images/product19.JPG",
+        "image": "images/BookMark.JPG",
         "onSale": false,
         "popular": false,
         "category": "Gifts & Accessories"
