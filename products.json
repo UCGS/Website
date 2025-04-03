@@ -4,7 +4,7 @@
         "description": "A stylish wooden box for your UNO cards.",
         "price": 115,
         "salePrice": 105.00,
-        "image": "images/Uno.jpg",
+        "images": [ "images/Uno.jpg", "images/Uno2.JPG", "images/Uno3.JPG" ],
         "onSale": true,
         "popular": false,
         "category": "Games & Puzzles"
@@ -124,7 +124,7 @@
         "description": "A compact Tic-Tac-Toe set for fun on the go.",
         "price": 55.00,
         "salePrice": 40.00,
-        "images": [ "images/TTT2.JPG", "images/TTT2_2" ],
+        "images": [ "images/TTT2.JPG", "images/TTT2_2.JPG" ],
         "onSale": false,
         "popular": false,
         "category": "Games & Puzzles"
@@ -631,7 +631,7 @@
         "category": "Gifts & Accessories"
     },
     {
-        "name": "Welcome Wall art",
+        "name": "Windmill Wall art",
         "description": "A round welcome sign featuring a windmill design.",
         "price": 180.00,
         "salePrice": 180.00,
@@ -651,5 +651,157 @@
         "onSale": false,
         "popular": false,
         "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Big 5 wall art",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 220.00,
+        "salePrice": 110.00,
+        "image": "images/AfricaArt.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Serviette Holder Style 2",
+        "description": "A round welcome sign featuring a windmill design.",
+        "price": 65.00,
+        "salePrice": 180.00,
+        "images": [
+            "images/ServietteHold.JPG","images/ServietteHold1.JPG","images/ServietteHold2.JPG"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Tree wall art - 3 piece",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 295.00,
+        "salePrice": 110.00,
+        "image": "images/3tree.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Wooden Spoon",
+        "description": "A round welcome sign featuring a windmill design.",
+        "price": 40.00,
+        "salePrice": 180.00,
+        "images": [
+            "images/Spoon1.JPG","images/Spoon2.JPG"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    
+    {
+        "name": "Deer wall art",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 195.00,
+        "salePrice": 110.00,
+        "image": "images/Deer.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Phone stand",
+        "description": "A round welcome sign featuring a windmill design.",
+        "price": 50.00,
+        "salePrice": 180.00,
+        "images": [
+            "images/Phone1.JPG","images/Phone2.JPG","images/Phone3.JPG"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Tissue Box cover",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 105.00,
+        "salePrice": 110.00,
+        "image": "images/Tissue.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Cutting boards",
+        "description": "A round welcome sign featuring a windmill design.",
+        "price": 195.00,
+        "salePrice": 180.00,
+        "images": [
+            "images/Cutting.JPG","images/Cutting1.JPG"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Egg holder",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 65.00,
+        "salePrice": 110.00,
+        "image": "images/EggHold.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Tooth Fairy box",
+        "description": "A round welcome sign featuring a windmill design.",
+        "price": 45.00,
+        "salePrice": 180.00,
+        "images": [
+            "images/Toothbox1.JPG","images/Toothbox2.JPG"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Shooter tray",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 130.00,
+        "salePrice": 110.00,
+        "image": "images/Shooter.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "30cm Ruler",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 35.00,
+        "salePrice": 110.00,
+        "image": "images/30cm.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+      {
+        "name": "Engraved Tin cups 6cm",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 40.00,
+        "salePrice": 110.00,
+        "image": "images/Cups.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+     {
+        "name": "Gift boxes - small",
+        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "price": 45.00,
+        "salePrice": 110.00,
+        "image": "images/Giftbox.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
     }
+    
 ]
