@@ -519,8 +519,8 @@
     {
         "name": "Easter Bunnies decor",
         "description": "Easter-themed decorative bunnies.",
-        "price": 140.00,
-        "salePrice": 140.00,
+        "price": 195.00,
+        "salePrice": 195.00,
         "image": "images/Easterbunnies.JPG",
         "onSale": false,
         "popular": false,
@@ -529,8 +529,8 @@
     {
         "name": "Easter egg box",
         "description": "A small decorative box for Easter eggs.",
-        "price": 25.00,
-        "salePrice": 25.00,
+        "price": 50.00,
+        "salePrice": 50.00,
         "image": "images/Easteregg.JPG",
         "onSale": false,
         "popular": false,
@@ -539,8 +539,8 @@
     {
         "name": "Mysterious Face Wall Art",
         "description": "A striking abstract face design wall art.",
-        "price": 350.00,
-        "salePrice": 350.00,
+        "price": 300.00,
+        "salePrice": 300.00,
         "image": "images/Face.JPG",
         "onSale": false,
         "popular": false,
@@ -549,8 +549,8 @@
     {
         "name": "Family Wall Art",
         "description": "A heartwarming wall art piece representing family.",
-        "price": 70.00,
-        "salePrice": 70.00,
+        "price": 85.00,
+        "salePrice": 85.00,
         "image": "images/FamilyArt.JPG",
         "onSale": false,
         "popular": false,
@@ -559,8 +559,8 @@
     {
         "name": "Home Sweet home Key hanger",
         "description": "A key hanger with the inscription 'Home Sweet Home'.",
-        "price": 120.00,
-        "salePrice": 120.00,
+        "price": 145.00,
+        "salePrice": 145.00,
         "image": "images/HSHKC.JPG",
         "onSale": false,
         "popular": false,
@@ -579,8 +579,8 @@
     {
         "name": "Love Hanging Wall Art",
         "description": "A beautiful wall art piece with 'Love' written on it.",
-        "price": 140.00,
-        "salePrice": 140.00,
+        "price": 150.00,
+        "salePrice": 150.00,
         "image": "images/LoveHang.JPG",
         "onSale": false,
         "popular": false,
@@ -589,8 +589,8 @@
     {
         "name": "Love Wall Art",
         "description": "A romantic wall art featuring the word 'Love'.",
-        "price": 110.00,
-        "salePrice": 110.00,
+        "price": 120.00,
+        "salePrice": 120.00,
         "image": "images/LoveWall.JPG",
         "onSale": false,
         "popular": false,
@@ -599,8 +599,8 @@
     {
         "name": "Surfboard Wall Art",
         "description": "A surfboard-themed wall art for beach lovers.",
-        "price": 200.00,
-        "salePrice": 200.00,
+        "price": 95.00,
+        "salePrice": 95.00,
         "images": [
             "images/Surfboard1.JPG","images/Surfboard2.JPG","images/Surfboard4.JPG","images/Surfboard4.JPG"
         ],
@@ -611,8 +611,8 @@
     {
         "name": "Tall Easter Bunny Decor",
         "description": "A tall, cute Easter bunny figurine.",
-        "price": 200.00,
-        "salePrice": 200.00,
+        "price": 120.00,
+        "salePrice": 120.00,
         "images": [
             "images/TallBunny.JPG","images/TallBunny2.JPG"
         ],
@@ -633,8 +633,8 @@
     {
         "name": "Welcome Wall art",
         "description": "A round welcome sign featuring a windmill design.",
-        "price": 110.00,
-        "salePrice": 110.00,
+        "price": 180.00,
+        "salePrice": 180.00,
         "images": [
             "images/Windmillround1.JPG","images/Windmillround2.JPG"
         ],
@@ -645,8 +645,8 @@
     {
         "name": "Wolf Wall Art",
         "description": "A majestic wolf-themed wall art.",
-        "price": 290.00,
-        "salePrice": 290.00,
+        "price": 300.00,
+        "salePrice": 300.00,
         "image": "images/WolfArt.JPG",
         "onSale": false,
         "popular": false,
