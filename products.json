@@ -200,7 +200,7 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Braai rules",
@@ -262,7 +262,7 @@
         "image": "images/OurFatherM.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Our Father cross - small",
@@ -272,7 +272,7 @@
         "image": "images/OurFatherS.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Picnic table condiment holder",
@@ -282,7 +282,7 @@
         "image": "images/Condiment.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Earring stand - small",
@@ -302,7 +302,7 @@
         "image": "images/Toothpicks.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Sweetener Holder",
@@ -312,7 +312,7 @@
         "image": "images/Sweetner.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Angel Candle Holder",
@@ -322,7 +322,7 @@
         "image": "images/Angel.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Windmill Decor",
@@ -332,7 +332,7 @@
         "image": "images/WindMill.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Tree of Life - Style 2",
@@ -342,7 +342,7 @@
         "image": "images/Tree2.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Tree of Life - Style 3",
@@ -352,7 +352,7 @@
         "image": "images/Tree3.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "15cm Ruler",
@@ -386,7 +386,7 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Cutting Board Braai Combo",
@@ -396,7 +396,7 @@
         "image": "images/CuttingCombo3.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Pocket Prayers",
@@ -418,7 +418,7 @@
         "image": "images/Calendar.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Miniature Volkswagen Model",
@@ -434,7 +434,7 @@
     },
     {
         "name": "Notebook with magnet",
-        "description": "A stylish and functional wooden notebook with a magnetic closure, measuring 200 by 100mm.",
+        "description": "A stylish and functional wooden notebook with a magnetic back perfect for a kitchen shopping list etc, measuring 200 by 100mm.",
         "price": 60.00,
         "salePrice": 60.00,
         "image": "images/NoteMagnet.JPG",
@@ -450,7 +450,7 @@
         "image": "images/Eiffel3D.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Bathroom door signs",
@@ -460,7 +460,7 @@
         "image": "images/Bathroom.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Coasters 6pc",
@@ -492,7 +492,7 @@
         "image": "images/MouseTrap.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Perfect Weekend braai board",
@@ -504,7 +504,7 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Africa Key hanger",
@@ -514,7 +514,7 @@
         "image": "images/AfricaKC.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Easter Bunnies decor",
@@ -524,7 +524,7 @@
         "image": "images/Easterbunnies.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Easter egg box",
@@ -544,7 +544,7 @@
         "image": "images/Face.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Family Wall Art",
@@ -554,7 +554,7 @@
         "image": "images/FamilyArt.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Home Sweet home Key hanger",
@@ -564,7 +564,7 @@
         "image": "images/HSHKC.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Key chains",
@@ -584,7 +584,7 @@
         "image": "images/LoveHang.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Love Wall Art",
@@ -594,7 +594,7 @@
         "image": "images/LoveWall.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Surfboard Wall Art",
@@ -606,7 +606,7 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Tall Easter Bunny Decor",
@@ -618,7 +618,7 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Welcome Wall art",
@@ -628,7 +628,7 @@
         "image": "images/Welcome.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Windmill Wall art",
@@ -640,7 +640,7 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Wolf Wall Art",
@@ -650,21 +650,21 @@
         "image": "images/WolfArt.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Big 5 wall art",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "Laser-cut wooden wall art featuring the iconic Big 5 animals—perfect for nature lovers and safari-themed decor.",
         "price": 220.00,
         "salePrice": 110.00,
         "image": "images/AfricaArt.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Serviette Holder Style 2",
-        "description": "A round welcome sign featuring a windmill design.",
+        "description": "Elegant and practical serviette holder with a sleek design, ideal for adding charm to any dining setting.",
         "price": 65.00,
         "salePrice": 180.00,
         "images": [
@@ -672,21 +672,21 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Tree wall art - 3 piece",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "A stunning 3-piece laser-cut tree design that brings a natural and calming vibe to your walls.",
         "price": 295.00,
         "salePrice": 110.00,
         "image": "images/3tree.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Wooden Spoon",
-        "description": "A round welcome sign featuring a windmill design.",
+        "description": "Handcrafted wooden spoon with a rustic touch—perfect for cooking, decor, or gifting.",
         "price": 40.00,
         "salePrice": 180.00,
         "images": [
@@ -694,22 +694,21 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
-    
     {
         "name": "Deer wall art",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "Intricate laser-cut deer silhouette, ideal for nature-themed spaces or rustic home decor.",
         "price": 195.00,
         "salePrice": 110.00,
         "image": "images/Deer.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Phone stand",
-        "description": "A round welcome sign featuring a windmill design.",
+        "description": "A minimalist wooden phone stand that keeps your device upright and your hands free—great for desks or nightstands.",
         "price": 50.00,
         "salePrice": 180.00,
         "images": [
@@ -721,17 +720,17 @@
     },
     {
         "name": "Tissue Box cover",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "A stylish wooden tissue box cover that turns a basic necessity into a decorative accent.",
         "price": 105.00,
         "salePrice": 110.00,
         "image": "images/Tissue.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Home & Decor"
     },
     {
         "name": "Cutting boards",
-        "description": "A round welcome sign featuring a windmill design.",
+        "description": "Durable and decorative wooden cutting boards, ideal for kitchen use or rustic serving trays.",
         "price": 195.00,
         "salePrice": 180.00,
         "images": [
@@ -739,21 +738,21 @@
         ],
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Egg holder",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "Charming wooden egg holder to neatly store or display your eggs in farmhouse style.",
         "price": 65.00,
         "salePrice": 110.00,
         "image": "images/EggHold.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "Tooth Fairy box",
-        "description": "A round welcome sign featuring a windmill design.",
+        "description": "A whimsical wooden box to safely tuck away your child’s lost tooth—perfect for Tooth Fairy traditions.",
         "price": 45.00,
         "salePrice": 180.00,
         "images": [
@@ -765,17 +764,17 @@
     },
     {
         "name": "Shooter tray",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "Serve your shots in style with this handcrafted wooden shooter tray—great for parties or gifting.",
         "price": 130.00,
         "salePrice": 110.00,
         "image": "images/Shooter.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
     {
         "name": "30cm Ruler",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "A sturdy 30cm wooden ruler with engraved measurements—both functional and beautifully crafted.",
         "price": 35.00,
         "salePrice": 110.00,
         "image": "images/30cm.JPG",
@@ -783,19 +782,19 @@
         "popular": false,
         "category": "Gifts & Accessories"
     },
-      {
+    {
         "name": "Engraved Tin cups 6cm",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "Charming 6cm tin cups with detailed engraving—rustic, collectible, and perfect for small servings.",
         "price": 40.00,
         "salePrice": 110.00,
         "image": "images/Cups.JPG",
         "onSale": false,
         "popular": false,
-        "category": "Gifts & Accessories"
+        "category": "Kitchen & Dining"
     },
-     {
+    {
         "name": "Gift boxes - small",
-        "description": "A welcoming wall art piece with the word 'Welcome'.",
+        "description": "Adorable small wooden gift boxes—perfect for jewelry, keepsakes, or thoughtful packaging.",
         "price": 45.00,
         "salePrice": 110.00,
         "image": "images/Giftbox.JPG",
@@ -803,5 +802,4 @@
         "popular": false,
         "category": "Gifts & Accessories"
     }
-    
 ]
