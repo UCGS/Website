@@ -668,7 +668,7 @@
         "price": 65.00,
         "salePrice": 180.00,
         "images": [
-            "images/ServietteHold.JPG","images/ServietteHold1.JPG","images/ServietteHold2.JPG"
+            "images/Serviettehold.JPG","images/Serviettehold1.JPG","images/ServietteHold2.JPG"
         ],
         "onSale": false,
         "popular": false,
@@ -690,7 +690,7 @@
         "price": 40.00,
         "salePrice": 180.00,
         "images": [
-            "images/Spoon1.JPG","images/Spoon2.JPG"
+            "images/spoon1.JPG","images/Spoon2.JPG"
         ],
         "onSale": false,
         "popular": false,
