@@ -20,6 +20,16 @@
         "category": "Games & Puzzles"
     },
     {
+        "name": "Car Key Chains",
+        "description": "Show off your ride in style with these sleek wooden keychains, each engraved with your favorite car brand’s logo — the perfect everyday accessory for any car enthusiast.",
+        "price": 40.00,
+        "salePrice": 90.00,
+        "image": "images/CarKeyChains.jpg",
+        "onSale": false,
+        "popular": true,
+        "category": "Games & Puzzles"
+    },
+    {
         "name": "Card box (cards included)",
         "description": "Elegant storage for your favorite card games.",
         "price": 100,
@@ -27,7 +37,7 @@
         "image": "images/CardBox.jpg",
         "onSale": true,
         "popular": false,
-        "category": "Games & Puzzles"
+        "category": "Gifts & Accessories"
     },
     {
         "name": "Braai box gift",
@@ -417,7 +427,7 @@
         "salePrice": 210.00,
         "image": "images/Calendar.JPG",
         "onSale": false,
-        "popular": false,
+        "popular": true,
         "category": "Home & Decor"
     },
     {
@@ -808,7 +818,7 @@
         "price": 280.00,
         "salePrice": 110.00,
         "images": [
-            "images/3DBigBen.jpg","images/3DBigBen1"
+            "images/3DBigBen.jpg","images/3DBigBen1.jpg"
         ],
         "onSale": false,
         "popular": false,
