@@ -16,7 +16,7 @@
         "salePrice": 90.00,
         "image": "images/Gun.jpg",
         "onSale": false,
-        "popular": true,
+        "popular": false,
         "category": "Games & Puzzles"
     },
     {
@@ -96,7 +96,7 @@
         "salePrice": 30.00,
         "image": "images/BarOne.jpg",
         "onSale": false,
-        "popular": true,
+        "popular": false,
         "category": "Gifts & Accessories"
     },
     {
@@ -106,7 +106,7 @@
         "salePrice": 70.00,
         "image": "images/SongPhoto.jpg",
         "onSale": false,
-        "popular": true,
+        "popular": false,
         "category": "Home & Decor"
     },
     {
@@ -503,7 +503,7 @@
             "images/PerfectWeekend.JPG","images/PerfectWeekend1.JPG"
         ],
         "onSale": false,
-        "popular": false,
+        "popular": true,
         "category": "Home & Decor"
     },
     {
@@ -734,7 +734,7 @@
         "price": 195.00,
         "salePrice": 180.00,
         "images": [
-            "images/Cutting.JPG","images/Cutting1.JPG"
+            "images/Cutting.JPG","images/Cutting1.JPG","images/Cutting2.jpg","images/Cutting3.jpg","images/Cutting4.jpg"
         ],
         "onSale": false,
         "popular": false,
@@ -798,6 +798,152 @@
         "price": 45.00,
         "salePrice": 110.00,
         "image": "images/Giftbox.JPG",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Big Ben 3D",
+        "description": "Bring a piece of London to your space with this intricate 3D wooden model of Big Ben — perfect for display or gifting.",
+        "price": 280.00,
+        "salePrice": 110.00,
+        "images": [
+            "images/3DBigBen.jpg","images/3DBigBen1"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Home & Decor"
+    },
+    {
+        "name": "Doll House - 3 tier",
+        "description": "A charming, handcrafted 3-tier wooden dollhouse — ideal for playtime or as a nostalgic decorative piece.",
+        "price": 500.00,
+        "salePrice": 110.00,
+        "images": [
+            "images/3TierDollHouse.jpg","images/3TierDollHouse1.jpg","images/3TierDollHouse2.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Bar Bottle Decor",
+        "description": "Add a rustic flair to your bar or kitchen with this stylish wooden wall art shaped like a bottle.",
+        "price": 75.00,
+        "salePrice": 110.00,
+        "image": "images/BarBottleWallArt.jpg",
+        "onSale": false,
+        "popular": false,
+        "category": "Kitchen & Dining"
+    },
+    {
+        "name": "Business Card Holder",
+        "description": "Keep your desk sleek and organized with this elegant wooden holder — perfect for business cards or small notes.",
+        "price": 85.00,
+        "salePrice": 110.00,
+        "image": "images/BusinessCardHolder.jpg",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Dad's Things Stand",
+        "description": "A practical and thoughtful gift for dad — this wooden stand keeps all his essentials in one spot.",
+        "price": 145.00,
+        "salePrice": 110.00,
+        "image": "images/DadsThingsNighstandItemHolder.jpg",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Floral Face Art",
+        "description": "Stunning and serene, this wooden wall piece blends facial contours with floral elegance for standout décor.",
+        "price": 195.00,
+        "salePrice": 110.00,
+        "image": "images/FloralFaceWallArt.jpg",
+        "onSale": false,
+        "popular": true,
+        "category": "Home & Decor"
+    },
+    {
+        "name": "Fridge Magnets single",
+        "description": "Add a splash of character to your fridge with these unique, single wooden magnets — collect your favorites!",
+        "price": 40.00,
+        "salePrice": 110.00,
+        "images": [
+            "images/FridgeMagent1.jpg","images/FridgeMagnet.jpg","images/FridgeMagnet2.jpg"
+        ],
+        "onSale": false,
+        "popular": false,
+        "category": "Kitchen & Dining"
+    },
+    {
+        "name": "Love Desk Art",
+        "description": "Simple yet heartfelt — this wooden 'Love' word art makes a lovely addition to any desk or shelf.",
+        "price": 95.00,
+        "salePrice": 110.00,
+        "image": "images/Lovewordwithstannd.jpg",
+        "onSale": false,
+        "popular": false,
+        "category": "Home & Decor"
+    },
+    {
+        "name": "P.S. Gift",
+        "description": "A sweet little surprise box perfect for holding chocolates, notes, or tiny treasures — heartfelt and unique.",
+        "price": 45.00,
+        "salePrice": 110.00,
+        "image": "images/PSChocolateGiftbox.jpg",
+        "onSale": false,
+        "popular": true,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Candle Holder - Small",
+        "description": "Add a cozy touch with this small wooden candle holder — great for ambiance and style.",
+        "price": 50.00,
+        "salePrice": 110.00,
+        "image": "images/SmallCandleHolder.jpg",
+        "onSale": false,
+        "popular": false,
+        "category": "Home & Decor"
+    },
+    {
+        "name": "Make-up brush holder - Small",
+        "description": "Neatly store your brushes in this compact wooden holder — stylish, functional, and handmade with care.",
+        "price": 45.00,
+        "salePrice": 110.00,
+        "image": "images/SmallMakeupBrushholder.jpg",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Wifi Detail Display",
+        "description": "A clever and chic way to display your Wi-Fi details — this wooden sign adds function and charm to any space.",
+        "price": 125.00,
+        "salePrice": 110.00,
+        "image": "images/WifiDetailDisplay.jpg",
+        "onSale": false,
+        "popular": true,
+        "category": "Home & Decor"
+    },
+    {
+        "name": "Wine Box",
+        "description": "Present your favorite bottle in style with this elegant wooden wine box — perfect for gifts or storage.",
+        "price": 100.00,
+        "salePrice": 110.00,
+        "image": "images/WineGiftBox.jpg",
+        "onSale": false,
+        "popular": false,
+        "category": "Gifts & Accessories"
+    },
+    {
+        "name": "Wooden Cigarette Box",
+        "description": "A refined way to store your cigarettes — this handcrafted wooden box is both stylish and sturdy.",
+        "price": 110.00,
+        "salePrice": 110.00,
+        "image": "images/Woodcigarettebox.jpg",
         "onSale": false,
         "popular": false,
         "category": "Gifts & Accessories"
