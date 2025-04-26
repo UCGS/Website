@@ -197,10 +197,12 @@
 
         .zoomed-image {
             max-width: 90%;
-            max-height: 90%;
+            max-height: 80vh; /* Makes sure the image is tall enough */
             object-fit: contain;
             border-radius: 5px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: auto; /* Allow the natural width to be used */
+            height: auto; /* Allow the natural height to be used */
         }
 
         .close-zoom {
@@ -353,7 +355,11 @@
         function openZoom(img) {
             const modal = document.getElementById('imageZoomModal');
             const zoomedImg = document.getElementById('zoomedImage');
+            
+            // Set a larger version of the image if available (assuming high-res versions exist)
+            // For now, we'll use the same image but it will display larger
             zoomedImg.src = img.src;
+            
             modal.style.display = 'block';
             
             // Prevent scrolling of the body when modal is open
