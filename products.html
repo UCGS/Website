@@ -171,100 +171,68 @@
             color: #ef4444;
         }
 
-        /* Lightbox Modal */
-        .image-modal {
+        /* Image zoom modal styles */
+        .zoom-modal {
             display: none;
             position: fixed;
-            z-index: 1100;
+            z-index: 1000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.85);
+            overflow: auto;
             transition: opacity 0.3s ease;
         }
 
-        .modal-content {
+        .zoom-content {
             position: relative;
-            margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
             width: 100%;
-            max-width: 80%;
+            height: 100%;
+            padding: 20px;
         }
 
-        .modal-image {
+        .zoomed-image {
             max-width: 90%;
             max-height: 90%;
             object-fit: contain;
             border-radius: 5px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
 
-        .close-modal {
+        .close-zoom {
             position: absolute;
             top: 20px;
-            right: 20px;
+            right: 30px;
+            color: white;
             font-size: 40px;
-            color: white;
-            cursor: pointer;
-            background: none;
-            border: none;
-            opacity: 0.8;
-            transition: opacity 0.2s;
-        }
-
-        .close-modal:hover {
-            opacity: 1;
-        }
-
-        /* Modal navigation buttons */
-        .modal-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-size: 24px;
             font-weight: bold;
-            z-index: 1101;
-            transition: background-color 0.3s;
+            cursor: pointer;
+            z-index: 1010;
+            transition: color 0.2s;
         }
 
-        .modal-nav:hover {
-            background-color: rgba(255, 255, 255, 0.4);
+        .close-zoom:hover {
+            color: #ccc;
         }
 
-        .modal-prev {
-            left: 20px;
-        }
-
-        .modal-next {
-            right: 20px;
-        }
-
-        /* For smaller screens */
-        @media (max-width: 768px) {
-            .modal-content {
-                max-width: 95%;
+        /* Add animation */
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
             }
-            
-            .modal-nav {
-                width: 40px;
-                height: 40px;
-                font-size: 20px;
+            to {
+                opacity: 1;
+                transform: scale(1);
             }
+        }
+
+        .zoomed-image {
+            animation: zoomIn 0.3s ease;
         }
     </style>
 </head>
@@ -282,7 +250,7 @@
     <main>
         <section id="products">
             <h1>Our Products</h1>
-            <p>Explore our beautifully crafted, locally sourced and made laser-cut wooden creations.</p>
+            <p>Explore our beautifully crafted, bespoke laser-cut wooden creations.</p>
 
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Search for products..." onkeyup="searchProducts()">
@@ -307,21 +275,15 @@
         <p>&copy; 2025 Unique Creations. All rights reserved.</p>
     </footer>
 
-    <!-- Image Modal -->
-    <div id="imageModal" class="image-modal">
-        <button class="close-modal" onclick="closeModal()">&times;</button>
-        <button class="modal-nav modal-prev" onclick="navigateModal(-1)">&lt;</button>
-        <button class="modal-nav modal-next" onclick="navigateModal(1)">&gt;</button>
-        <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="" alt="Large product image">
+    <!-- Image Zoom Modal -->
+    <div id="imageZoomModal" class="zoom-modal">
+        <span class="close-zoom" onclick="closeZoom()">&times;</span>
+        <div class="zoom-content">
+            <img id="zoomedImage" class="zoomed-image" src="" alt="Zoomed product image">
         </div>
     </div>
 
     <script>
-        // Current modal product and image index
-        let currentModalProduct = null;
-        let currentModalImageIndex = 0;
-
         fetch('products.json', { cache: "no-store" })
             .then(response => response.json())
             .then(data => {
@@ -360,7 +322,7 @@
                     // Create image gallery HTML
                     let imageGalleryHTML = `
                         <div class="image-gallery ${imageGalleryClass}" data-current="0" data-total="${productImages.length}">
-                            <img src="${productImages[0]}" alt="${product.name}" onclick="openModal(this)">
+                            <img src="${productImages[0]}" alt="${product.name}" onclick="openZoom(this)">
                             <button class="image-nav prev-image" onclick="prevImage(this)">&lt;</button>
                             <button class="image-nav next-image" onclick="nextImage(this)">&gt;</button>
                         </div>
@@ -387,6 +349,39 @@
             })
             .catch(error => console.error('Error loading products:', error));
 
+        // Image zoom functions
+        function openZoom(img) {
+            const modal = document.getElementById('imageZoomModal');
+            const zoomedImg = document.getElementById('zoomedImage');
+            zoomedImg.src = img.src;
+            modal.style.display = 'block';
+            
+            // Prevent scrolling of the body when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeZoom() {
+            document.getElementById('imageZoomModal').style.display = 'none';
+            
+            // Re-enable scrolling
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close the modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageZoomModal');
+            if (event.target === modal) {
+                closeZoom();
+            }
+        }
+        
+        // Close zoom modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeZoom();
+            }
+        });
+
         // Function to navigate to the previous image
         function prevImage(button) {
             const gallery = button.parentElement;
@@ -400,9 +395,6 @@
             // Update the current image
             gallery.setAttribute('data-current', currentIndex);
             gallery.querySelector('img').src = images[currentIndex];
-            
-            // Stop event propagation to prevent modal from opening
-            event.stopPropagation();
         }
         
         // Function to navigate to the next image
@@ -418,74 +410,7 @@
             // Update the current image
             gallery.setAttribute('data-current', currentIndex);
             gallery.querySelector('img').src = images[currentIndex];
-            
-            // Stop event propagation to prevent modal from opening
-            event.stopPropagation();
         }
-
-        // Open the modal with the clicked image
-        function openModal(img) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            const gallery = img.closest('.image-gallery');
-            const product = img.closest('.product');
-            
-            // Store the current product and image index
-            currentModalProduct = product;
-            currentModalImageIndex = parseInt(gallery.getAttribute('data-current'));
-            
-            // Set the image in the modal
-            const images = JSON.parse(product.getAttribute('data-images'));
-            modalImg.src = images[currentModalImageIndex];
-            
-            // Show the modal
-            modal.style.display = 'block';
-            
-            // Disable scrolling on body when modal is open
-            document.body.style.overflow = 'hidden';
-        }
-
-        // Close the modal
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
-            
-            // Re-enable scrolling
-            document.body.style.overflow = 'auto';
-        }
-
-        // Navigate between images in the modal
-        function navigateModal(direction) {
-            if (!currentModalProduct) return;
-            
-            const images = JSON.parse(currentModalProduct.getAttribute('data-images'));
-            
-            // Calculate the new index
-            currentModalImageIndex = (currentModalImageIndex + direction + images.length) % images.length;
-            
-            // Update the modal image
-            const modalImg = document.getElementById('modalImage');
-            modalImg.src = images[currentModalImageIndex];
-        }
-
-        // Close the modal when clicking outside of the image
-        window.onclick = function(event) {
-            const modal = document.getElementById('imageModal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        }
-
-        // Listen for escape key to close modal
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            } else if (event.key === 'ArrowLeft') {
-                navigateModal(-1);
-            } else if (event.key === 'ArrowRight') {
-                navigateModal(1);
-            }
-        });
 
         function searchProducts() {
             const input = document.getElementById('search-input').value.toLowerCase();
